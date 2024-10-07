@@ -25,16 +25,16 @@ a {
   text-decoration: none;
   color: white;
 }
-#img {
+.cover {
   background-size: auto;
-  background-repeat: no-repeat;
+  width: auto;
 }
 img {
   width: 100%;
   height: 300px;
 }
 .boxes {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-around;
 }
@@ -44,7 +44,7 @@ img {
   height: 150px;
 }
 .table {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 table {
   width: 50%;
@@ -67,12 +67,13 @@ th {
   margin-top: 15px;
   color: blue;
   line-height: 1.5;
+  padding: 20px;
 }
 .list {
   margin-top: 15px;
   background-color: rgb(218, 106, 106);
-  width: 100%;
-  padding: 20px;
+  /* width: 100%; */
+  padding: 30px;
   color: white;
 }
 footer {
