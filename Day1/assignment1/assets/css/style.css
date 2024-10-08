@@ -42,6 +42,7 @@ img {
   background-color: rgb(218, 106, 106);
   width: 200px;
   height: 150px;
+  border-radius: 10px;
 }
 .table {
   margin-top: 20px;
