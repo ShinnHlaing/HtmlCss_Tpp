@@ -1,0 +1,26 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+table {
+  width: 100%;
+  margin: auto;
+}
+td,
+th {
+  padding: 10px;
+}
+table tr th {
+  width: 25%;
+}
+table td {
+  vertical-align: top;
+}
+th,
+.bold {
+  background-color: gray;
+}
+.bold {
+  font-weight: bold;
+}
