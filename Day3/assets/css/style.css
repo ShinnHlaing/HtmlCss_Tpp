@@ -1,0 +1,67 @@
+ul > li > ul {
+  display: none;
+}
+.main > li:hover .sub {
+  display: block;
+  margin: 0 auto;
+}
+.container {
+  width: 980px;
+  background-color: rgb(80, 188, 224);
+  margin: auto;
+}
+ul {
+  list-style-type: none;
+}
+h3::before {
+  content: "\262F";
+  color: red;
+  margin: 5px;
+}
+h3 {
+  padding: 10px;
+}
+ol {
+  list-style-type: none;
+  /* position: relative; */
+}
+ol > li {
+  margin-bottom: 35px;
+  text-align: justify;
+  color: black;
+  position: relative;
+  padding-left: 40px;
+}
+ol > li::before {
+  content: "";
+  background-image: url("/Day3/assets/images/ballons.jpg");
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  background-size: contain;
+}
+ol > li:last-child::before {
+  bottom: 0;
+  top: initial;
+}
+.imgSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.card {
+  background-image: url("/Day3/assets/images/ballons.jpg");
+  height: 200px;
+  width: calc(25% - 24px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  /* margin: 0 24px 24px 0; */
+}
+.card > p {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

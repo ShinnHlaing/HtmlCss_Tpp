@@ -1,0 +1,103 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orangered;
+  padding: 15px;
+  color: white;
+}
+.navlist > ul > li {
+  list-style-type: none;
+  display: inline;
+  padding: 5px;
+}
+.logo {
+  font-weight: bold;
+}
+.heroImg {
+  background-image: url("/Day3/assets/images/backgoround_img.jpg");
+  height: calc(100vh - 48px);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgText {
+  color: white;
+  text-align: center;
+}
+.button {
+  border-radius: 15px;
+  padding: 10px;
+  background-color: orangered;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+.faqSection {
+  margin-top: 30px;
+}
+.faq {
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+.faq::before {
+  content: " ";
+  width: 110px;
+  height: 1px;
+  background-color: orangered;
+  position: absolute;
+  top: 90%;
+}
+.faq::after {
+  content: " ";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: orangered;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border: 5px solid white;
+}
+.faqlist {
+  /* background-color: aquamarine; */
+  width: 600px;
+  margin: auto;
+}
+.outer {
+  /* background-color: red; */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+dt {
+  background-color: orangered;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 8px;
+}
+dd {
+  padding: 8px;
+  text-align: justify;
+}
+footer {
+  margin-top: 25px;
+  background-color: black;
+  padding: 15px;
+}
