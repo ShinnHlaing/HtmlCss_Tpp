@@ -81,6 +81,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-left: 150px;
+  height: 100vh;
 }
 .innerFormDiv {
   width: calc(100% - 150px / 2);
