@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --color: white;
+  --textFont: "Roboto", serif;
+  --titleFont: "Noto Serif", serif;
+  --navBgColor: orange;
+  --textSize: 16px;
+  --logoSize: 20px;
+}
+body {
+  font-family: var(--textFont);
+  background-color: gray;
+  font-size: var(--textFont);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--navBgColor);
+  padding: 10px;
+  align-items: center;
+}
+.navlist > ul > li {
+  display: inline;
+  padding: 8px;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+.logo a {
+  font-family: var(--titleFont);
+  font-size: var(--logoSize);
+  color: var(--color);
+}
+
+.mainMenu > ul > li {
+  position: relative;
+}
+.subMenu {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--color);
+  display: none;
+  width: 70px;
+  position: absolute;
+  background-color: var(--navBgColor);
+  z-index: 1;
+  padding: 10px;
+}
+.mainMenu li:hover .subMenu {
+  display: block;
+}
+.main {
+  position: relative;
+  background-size: cover;
+}
+img {
+  width: 100%;
+}
+img,
+.imgText:hover {
+  cursor: pointer;
+}
+.imgText {
+  position: absolute;
+  top: 40%;
+  color: var(--color);
+  font-family: var(--textFont);
+  text-align: center;
+}
+.imgText p {
+  margin-bottom: 30px;
+}
+.imgText > a {
+  width: 200px;
+  height: 20px;
+  padding: 10px;
+  background-color: var(--navBgColor);
+  border-radius: 20px;
+}
+.formContainer {
+  width: 1140px;
+  margin: auto;
+}
+.form {
+  display: flex;
+  margin-bottom: 16px;
+}
+.form > label {
+  width: 200px;
+}
+.form > *:not(label) {
+  width: calc(100% - 200px);
+  padding: 8px;
+}
+.button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  gap: 20px;
+}
+.button > input {
+  width: 80px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: orange;
+  color: var(--color);
+  text-transform: uppercase;
+}
