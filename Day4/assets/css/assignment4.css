@@ -73,6 +73,24 @@ main {
 .sideDetail:first-child {
   margin-top: 50px;
 }
+/* .subList {
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  color: orangered;
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+}
+.subList ul li {
+  list-style-type: none;
+}
+.sub {
+  position: relative;
+}
+.sub:hover .subList {
+  display: block;
+} */
 /* right */
 .formDiv {
   background-color: var(--formBg);
