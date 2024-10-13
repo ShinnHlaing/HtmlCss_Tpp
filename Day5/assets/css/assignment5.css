@@ -156,7 +156,6 @@ img {
   align-items: center;
   gap: 20px;
   margin-bottom: 50px;
-  overflow: hidden;
 }
 .numberCard {
   width: calc((100% / 2) - 10px);
@@ -168,10 +167,11 @@ img {
   padding: 10px;
   transition: all 1s ease-in;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 .numberCard:hover {
   background-color: var(--numberCardHoverColor);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .subTitle {
   color: var(--buttonBgColor2);
