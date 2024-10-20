@@ -9,15 +9,8 @@
 body {
   height: 100vh;
   box-sizing: border-box;
-
-  background-image: linear-gradient(
-    to right,
-    #fdbca6,
-    #f9c3a9,
-    #f4caad,
-    #f0d0b3,
-    #ecd6bb
-  );
+  position: relative;
+  overflow-x: hidden;
 }
 :root {
   --bodyFont: "Roboto", sans-serif;
@@ -27,32 +20,51 @@ body {
   --textFontSize: 18px;
 }
 .outer {
-  max-width: 1460px;
+  max-width: 1461px;
   margin: auto;
-  height: 100vh;
 }
 header {
+  width: 100%;
+  position: absolute;
+  top: 0%;
+}
+.cover {
   background-image: url("/Day6/assets/img/bg_10.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   border-bottom-left-radius: 150px;
   border-bottom-right-radius: 150px;
-  position: relative;
-  z-index: -1;
+  height: 100vh;
+}
+.headText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  color: white;
+  text-align: center;
+  padding-top: 200px;
 }
 .innerContainer {
   max-width: 1140px;
   margin: auto;
 }
-.menu {
+.navmenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0px;
-  font-family: var(--headFont);
+  padding: 10px 10px;
+  font-family: var(--bodyFont);
 }
 .logo {
   padding-top: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 .tlogo {
   max-width: 100%;
@@ -63,16 +75,42 @@ header {
   align-items: center;
   gap: 15px;
 }
-
-ul li {
+#menuIcon {
+  color: var(--navBgColor);
+  font-size: 20px;
+}
+.iconDiv {
+  background-color: white;
+  width: 20px;
+  padding: 14px;
+  text-align: center;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+}
+.menu li {
   list-style-type: noe;
   display: inline;
   margin-left: 10px;
+  position: relative;
 }
-li a {
+.menu li a {
   text-decoration: none;
   color: white;
   font-size: 14px;
+}
+.menu li::before {
+  content: url("/Day6/assets/img/Line\ 1.png");
+  position: absolute;
+  top: 0;
+  left: 10%;
+  display: none;
+}
+.menu li:hover::before {
+  display: block;
+}
+.hbMenu {
+  display: none;
 }
 .btn {
   display: flex;
@@ -92,23 +130,6 @@ li a {
   transition: all 0.5s ease-in;
   font-size: 14px;
 }
-.btn ~ a:hover {
-  background-color: var(--navBgColor);
-}
-/* head text */
-.headText {
-  /* background-color: orange; */
-  width: 550px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 25px;
-  color: white;
-  text-align: center;
-  margin-top: 10%;
-}
 .title {
   font-family: var(--headFont);
   font-size: 60px;
@@ -123,31 +144,47 @@ li a {
   color: white;
   text-decoration: none;
   width: 130px;
-
   padding: 5px;
   border: 1px solid white;
   border-radius: 15px;
   font-family: var(--bodyFont);
+  font-size: 18px;
   transition: all 0.5s ease-in;
 }
 .titleBtn:hover {
   background-color: var(--navBgColor);
 }
 /* head box section */
-.boxes {
+main {
+  margin: 180px 0px 60px 0px;
+  margin-top: -70px;
+}
+.innerContainer2 {
   max-width: 1140px;
   margin: auto;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  position: absolute;
-  bottom: -15%;
-  z-index: 1;
+  gap: 20px;
+}
+.destinyBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 .box {
-  max-width: calc((1140px / 4) - 15px);
+  max-width: calc((1140px / 4) - 35px);
   background-color: white;
   text-align: center;
   padding: 20px 10px;
@@ -157,6 +194,21 @@ li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.destinyBox {
+  max-width: calc((1140px / 4) - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: white;
+  column-gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s linear;
 }
 .box:hover {
   transform: translateY(-30px);
@@ -171,21 +223,11 @@ li a {
 .boxTile {
   font-size: 18px;
   font-weight: bold;
+  font-family: var(--headFont);
 }
 .boxText {
   font-size: 14px;
-}
-main {
-  margin: 180px 0px 60px 0px;
-}
-.innerContainer2 {
-  max-width: 1140px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+  font-family: var(--bodyFont);
 }
 .locationLogo {
   display: flex;
@@ -213,31 +255,10 @@ main {
   transform: scaleX(-1);
 }
 .section2Title {
-  font-family: var(--headFont);
+  font-family: var(--bodyFont);
   font-size: 20px;
   font-weight: 800;
   text-align: center;
-}
-.destinyBoxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.destinyBox {
-  max-width: calc((1140px / 4) - 70px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  background-color: white;
-  column-gap: 10px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-  transition: transform 0.5s linear;
 }
 .destinyBox:hover {
   transform: translateY(-20px);
@@ -259,8 +280,8 @@ main {
   padding: 5px;
   background-color: white;
   position: absolute;
-  right: 0.5%;
-  top: 0.5%;
+  right: 5%;
+  top: 5%;
   border-radius: 10px;
 }
 .priceBtn {
@@ -275,6 +296,11 @@ main {
   text-align: center;
   border-radius: 10px;
   font-family: var(--bodyFont);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.priceBtn:hover {
+  background-color: #e76f51;
+  color: white;
 }
 .bottomDestinyBox {
   display: flex;
@@ -329,8 +355,9 @@ main {
   border-radius: 10px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   background-image: url("/Day6/assets/img/Subscribe.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: auto;
   transition: transform 0.5s linear;
 }
@@ -384,6 +411,10 @@ input:focus {
 .sent {
   max-width: 30px;
 }
+.arrowbtn {
+  border: none;
+  background-color: transparent;
+}
 .arrow {
   max-width: 100%;
 }
@@ -396,55 +427,67 @@ input:focus {
 .tent {
   width: 80%;
 }
+/* footer */
 footer {
   max-width: 1460px;
   margin: auto;
   background: linear-gradient(to right, #d6a4a4, #dbd4bd);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-top-left-radius: 70px;
   border-top-right-radius: 70px;
   padding: 50px 0px;
-  color: white;
+  position: relative;
+}
+.upBox {
+  background-color: white;
+  width: 40px;
+  padding: 8px;
+  text-align: center;
+  border-radius: 20%;
+  position: fixed;
+  bottom: 5px;
+  right: 2%;
+  border: none;
+  outline: none;
+}
+#upArrow {
+  color: var(--navBgColor);
 }
 .innerFooter {
   max-width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  padding: 20px;
+}
+.fcontainer {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
 .f1 {
-  max-width: calc(100% / 4);
+  max-width: calc(100% / 2);
+}
+.fText {
+  font-family: var(--headFont);
+  font-weight: 800;
+  font-size: 18px;
+}
+.subText {
+  font-family: var(--bodyFont);
+  font-size: 16px;
+}
+.download {
+  margin: 10px 0px 0px 0px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  gap: 5px;
-}
-.fText {
-  font-family: var(--bodyFont);
-  font-weight: 800;
-  font-size: 12px;
-}
-.subText {
-  font-family: var(--bodyFont);
-  font-size: 10px;
-}
-.download {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.appImg {
-  display: flex;
-  gap: 5px;
-  /* background-color: white; */
 }
 .app {
-  width: 30%;
+  width: 40%;
 }
 .fList li {
   list-style-type: none;
@@ -452,33 +495,131 @@ footer {
   font-size: 10px;
   display: block;
   margin: 0;
+  font-size: 16px;
 }
 .copyRight {
   font-family: var(--bodyFont);
-  font-size: 10px;
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
 }
 @media screen and (max-width: 922px) {
-  /* .boxes {
-    height: auto;
-  }
-  .box {
-    width: calc((100% / 2) - 15px);
-  } */
   .emailBox {
     flex-direction: column-reverse;
-    max-width: 80%;
+    max-width: 75%;
     padding: 25px 0px;
     gap: 10px;
   }
   .mailbox {
-    width: 300px;
+    width: auto;
   }
   .left {
     align-items: center;
   }
+  .box {
+    max-width: calc(calc(1140px / 2) - 250px);
+  }
+  .destinyBox {
+    max-width: calc(calc(1140px / 2) - 280px);
+  }
 }
 @media screen and (max-width: 576px) {
+  .hbMenu {
+    display: none;
+    background-color: rgba(11, 76, 98, 0.783);
+    width: 1140px;
+    margin: auto;
+    height: 100vh;
+  }
+  .hbLists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 110px 200px;
+  }
+  .hbLists .hbList {
+    width: 100%;
+  }
+  .hbLists,
+  .hbList,
+  a {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-family: var(--headFont);
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .menu {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  .iconDiv {
+    display: block;
+  }
+  .boxes {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .box {
+    max-width: 65%;
+  }
   .emailBox {
-    max-width: 90%;
+    max-width: 60%;
+    height: 400px;
+  }
+  .mailbox {
+    width: 200px;
+  }
+  .left {
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    width: 60%;
+  }
+  .destinyBox {
+    max-width: 50%;
+  }
+  .fcontainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 35px;
+    padding: 20px;
+  }
+  .f1 {
+    grid-column: 1 / span 4;
+    max-width: 100%;
+    text-align: justify;
+  }
+  .f2 {
+    grid-column: 1 / span 2;
+  }
+  .f3 {
+    grid-column: 3 / span 2;
+  }
+  .f4 {
+    grid-column: 1 / span 4;
+  }
+  .innerFooter {
+    max-width: 65%;
+    gap: 20px;
+  }
+  .download {
+    margin-left: 20px;
+    flex-direction: column;
+  }
+  .appImg {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+  }
+  .app {
+    max-width: 30%;
   }
 }
