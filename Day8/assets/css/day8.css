@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --blue: #325dff;
+  --white: #ffffff;
+}
+body {
+  font-family: "Lato", "Poppins", "Dancing Script", sans-serif;
+  background-color: #e4e4e4;
+}
+.outerContainer {
+  max-width: 1280px;
+  margin: auto;
+}
+.innerContainer {
+  max-width: 1171px;
+  margin: auto;
+}
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.landing {
+  font-size: 28px;
+  color: white;
+  font-family: "Dancing Script";
+}
+.menu li {
+  display: inline;
+  margin-left: 30px;
+}
+.menu li a {
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-size: 12px;
+}
+.banner {
+  height: 100vh;
+  background-image: url("/Day8/assets/img/rectangle-17.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 200px;
+  position: relative;
+}
+.banner::before {
+  content: "";
+  background-color: rgba(0, 0, 253, 0.21);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.innerBanner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  text-align: center;
+}
+.headerTitle {
+  font-size: 100px;
+  color: white;
+  font-family: "Lato";
+  z-index: 1;
+}
+.headerText {
+  color: white;
+  opacity: 0.7;
+}
+.viewBtn {
+  width: 307px;
+  height: 71px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  border-radius: 36px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.viewBtn:hover {
+  background-color: white;
+  color: var(--blue);
+}
+.innerSection2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.leftSection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 30px;
+  gap: 30px;
+  /* background-color: white; */
+}
+.sectionTitle {
+  font-family: "Lato";
+  font-size: 50px;
+}
+.bodyText {
+  font-family: "Poppins";
+  font-size: 16px;
+  opacity: 0.5;
+}
+.rightSection {
+  width: 50%;
+}
+.section2Img {
+  max-width: 100%;
+}
+.innerSection3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  gap: 50px;
+}
+.titleDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.section3Title {
+  font-family: "Lato";
+  font-size: 35px;
+}
+.section3Text {
+  font-family: "Poppins";
+  font-size: 16px;
+  opacity: 0.65;
+  text-align: center;
+}
+.boxes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.box {
+  max-width: calc(calc(1171px / 3) - 14px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: white;
+  padding: 50px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.icon {
+  width: 88px;
+  height: 88px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: var(--blue);
+  position: relative;
+}
+.icon > img {
+  max-width: 100%;
+  position: absolute;
+  top: 32%;
+  left: 32%;
+  text-align: center;
+}
+.boxText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.boxTitle {
+  font-family: "Lato";
+  font-size: 18px;
+  opacity: 0.8;
+}
+.section3 {
+  margin-bottom: 30px;
+}
+.section5 {
+  margin: 50px 0px;
+  max-width: 100%;
+}
+.section4 {
+  margin-top: 50px 0px;
+}
+.cover {
+  background-image: url(/Day8/assets/img/Image.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  position: relative;
+}
+.cover::after {
+  content: "";
+  background-color: rgba(21, 116, 185, 0.22);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.img {
+  z-index: 1;
+}
+.play {
+  max-width: 60%;
+}
+.coverText {
+  text-align: center;
+  color: white;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  gap: 10px;
+  width: 500px;
+  z-index: 1;
+}
+.coverTitle {
+  font-family: "Lato";
+  font-size: 35px;
+}
+.coverText {
+  font-family: "Poppins";
+  font-size: 16px;
+}
+footer {
+  background-color: var(--blue);
+  max-width: 100%;
+}
+.fText {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: "Poppins";
+  opacity: 0.52;
+  padding: 30px;
+}
