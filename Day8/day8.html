@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/day8.css" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/day8.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="./day8.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -12,12 +17,15 @@
       <div class="innerContainer">
         <nav class="">
           <a class="landing">Landing</a>
-          <ul class="menu">
+          <ul class="menu" id="hbMenu">
             <li><a href="">Work</a></li>
             <li><a href="">Features</a></li>
             <li><a href="">Blog</a></li>
             <li><a href="">Contact Us</a></li>
           </ul>
+          <div class="iconDiv">
+            <i class="fa-solid fa-bars" id="menuIcon" onclick="show()"></i>
+          </div>
         </nav>
       </div>
     </header>
@@ -47,7 +55,7 @@
           </div>
           <div class="rightSection">
             <img
-              src="assets/img/Rectangle 2.png"
+              src="./assets/img/Rectangle 2.png"
               alt="building"
               class="section2Img"
             />
@@ -71,7 +79,7 @@
             <div class="box">
               <!-- top box -->
               <div class="icon">
-                <img src="assets/img/Path 1.png" alt="umbrella" />
+                <img src="./assets/img/Path 1.png" alt="umbrella" />
               </div>
               <!-- bottom box -->
               <div class="boxText">
@@ -86,7 +94,7 @@
             <div class="box">
               <!-- top box -->
               <div class="icon">
-                <img src="assets/img/Path 7.png" alt="umbrella" />
+                <img src="./assets/img/Path 7.png" alt="umbrella" />
               </div>
               <!-- bottom box -->
               <div class="boxText">
@@ -101,7 +109,7 @@
             <div class="box">
               <!-- top box -->
               <div class="icon">
-                <img src="assets/img/Path 8.png" alt="umbrella" />
+                <img src="./assets/img/Path 8.png" alt="umbrella" />
               </div>
               <!-- bottom box -->
               <div class="boxText">
@@ -116,7 +124,7 @@
             <div class="box">
               <!-- top box -->
               <div class="icon">
-                <img src="assets/img/Path 9.png" alt="umbrella" />
+                <img src="./assets/img/Path 9.png" alt="umbrella" />
               </div>
               <!-- bottom box -->
               <div class="boxText">
@@ -131,7 +139,7 @@
             <div class="box">
               <!-- top box -->
               <div class="icon">
-                <img src="assets/img/Path 11.png" alt="umbrella" />
+                <img src="./assets/img/Path 11.png" alt="umbrella" />
               </div>
               <!-- bottom box -->
               <div class="boxText">
@@ -146,7 +154,7 @@
             <div class="box">
               <!-- top box -->
               <div class="icon">
-                <img src="assets/img/Path 10.png" alt="umbrella" />
+                <img src="./assets/img/Path 10.png" alt="umbrella" />
               </div>
               <!-- bottom box -->
               <div class="boxText">
@@ -161,10 +169,10 @@
         </div>
       </section>
       <!-- section 4 -->
-      <section class="section4 outerContainer">
+      <section class="section4">
         <div class="cover">
           <div class="img">
-            <img src="assets/img/Path 12.png" alt="play" class="play" />
+            <img src="./assets/img/Path 12.png" alt="play" class="play" />
           </div>
           <div class="coverText">
             <h3 class="coverTitle">Our Case Studies</h3>
@@ -203,7 +211,7 @@
           </div>
           <div class="rightSection">
             <img
-              src="assets/img/Rectangle 10.png"
+              src="./assets/img/Rectangle 10.png"
               alt="building"
               class="section2Img"
             />
@@ -213,7 +221,7 @@
         <div class="innerSection2">
           <div class="rightSection">
             <img
-              src="assets/img/Rectangle 11.png"
+              src="./assets/img/Rectangle 11.png"
               alt="building"
               class="section2Img"
             />
@@ -245,7 +253,7 @@
           </div>
           <div class="rightSection">
             <img
-              src="assets/img/flower.png"
+              src="./assets/img/flower.png"
               alt="building"
               class="section2Img"
             />
@@ -253,7 +261,7 @@
         </div>
       </section>
     </main>
-    <footer class="outerContainer">
+    <footer>
       <p class="fText">Copyright 2017. All Rights Reserved.</p>
     </footer>
   </body>
