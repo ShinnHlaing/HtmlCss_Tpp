@@ -6,3 +6,13 @@ function show() {
     menu.style.display = "none";
   }
 }
+
+function openPopup() {
+  let popup = document.getElementById("popupBox");
+  popup.style.display = "block";
+}
+
+function closePopup() {
+  let popup = document.getElementById("popupBox");
+  popup.style.display = "none";
+}

@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <script src="./day8.js"></script>
+    <script src="./day8.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -171,8 +171,20 @@
       <!-- section 4 -->
       <section class="section4">
         <div class="cover">
-          <div class="img">
-            <img src="./assets/img/Path 12.png" alt="play" class="play" />
+          <i class="fa-solid fa-play" id="play" onclick="openPopup()"></i>
+          <div class="popupBox" id="popupBox">
+            <h3>Title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+              voluptates officia temporibus natus. Soluta vero voluptates
+              doloribus eum cum voluptate est minima aliquam, at voluptas quis
+              aspernatur et facere inventore Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Repudiandae laborum adipisci
+              possimus architecto ipsum optio totam asperiores? Placeat delectus
+              fuga, explicabo suscipit alias nam error, atque perferendis
+              inventore, quaerat vero!
+            </p>
+            <span class="close" onclick="closePopup()">&times;</span>
           </div>
           <div class="coverText">
             <h3 class="coverTitle">Our Case Studies</h3>
