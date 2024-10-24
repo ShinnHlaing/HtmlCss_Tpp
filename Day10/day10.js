@@ -1,9 +1,3 @@
-// let container = document.getElementById("container");
-
-// let text = document.createElement("p");
-// text.textContent = `Hello Welcome my page!`;
-
-// container.appendChild(text);
 document.addEventListener("DOMContentLoaded", function () {
   let inputNum = document.getElementById("inputNum");
   inputNum.addEventListener("input", function () {

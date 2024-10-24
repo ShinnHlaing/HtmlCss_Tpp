@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <script src="./form.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body style="background-color: silver">
+    <div class="outer">
+      <form action="">
+        <!-- first Name -->
+        <div class="inner">
+          <label for="name">First Name<span>*</span></label>
+          <div class="right">
+            <input type="text" name="" id="name" />
+            <p class="notiText" id="pName"></p>
+          </div>
+        </div>
+        <!-- last name -->
+        <div class="inner">
+          <label for="lastname">Last Name <span>*</span></label>
+          <div class="right">
+            <input type="text" name="" id="lastname" />
+            <p class="notiText" id="pLName"></p>
+          </div>
+        </div>
+        <!-- id -->
+        <div class="inner">
+          <label for="id">ID <span>*</span></label>
+          <div class="right">
+            <input type="number" name="" id="id" />
+            <p class="notiText" id="pId"></p>
+          </div>
+        </div>
+        <!-- email -->
+        <div class="inner">
+          <label for="email">Email <span>*</span></label>
+          <div class="right">
+            <input type="email" name="" id="email" />
+            <p class="notiText" id="pEmail"></p>
+          </div>
+        </div>
+        <!-- password -->
+        <div class="inner">
+          <label for="password">Password <span>*</span></label>
+          <div class="right">
+            <input type="password" name="" id="password" />
+            <p class="notiText" id="pPw"></p>
+          </div>
+        </div>
+        <!-- confirm password -->
+        <div class="inner">
+          <label for="confirm">Confirm Password <span>*</span></label>
+          <div class="right">
+            <input type="password" name="" id="confirm" />
+            <p class="notiText" id="pConfirm"></p>
+          </div>
+        </div>
+      </form>
+      <input type="submit" value="Submit" id="submit" />
+    </div>
+  </body>
+</html>
