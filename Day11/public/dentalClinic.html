@@ -7,10 +7,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/day11.css" />
   </head>
-  <body class="">
+  <body>
     <header
       class="bg-cover bg-no-repeat bg-center h-svh before:absolute before:content-[''] before:top-0 before:w-full before:bg-gradient-to-r from-cyan-300 to-teal-600 before:h-svh before:opacity-[0.5]"
       style="background-image: url('./assets/img/cover-bg.jpg')"
@@ -18,7 +26,7 @@
       <nav class="max-w-inner mx-auto text-white flex flex-col px-5">
         <!-- top nav -->
         <div
-          class="border-b-2 border-b-white border-opacity-25 xl:lg:md:flex justify-between item-center py-5 z-50  sm:hidden"
+          class="border-b-2 border-b-white border-opacity-25 xl:lg:md:flex justify-between item-center py-5 z-50 sm:hidden"
         >
           <div class="flex gap-5 text-sm">
             <div>
@@ -39,27 +47,42 @@
         </div>
         <!-- bottom nav -->
         <div class="flex justify-between items-center py-5 z-50">
-          <h3 class="text-lg uppercase font-bold hover:text-cyan-500">Logo</h3>
-          <i class="fa-solid fa-bars xl:lg:md:hidden sm:block"></i>
-          <div class="xl:lg:md:flex sm:hidden">
-            <ul class="flex gap-5 justify-center items-center text-sm">
-              <li><a href="" class="hover:text-cyan-500">About Us</a></li>
-              <li><a href="" class="hover:text-cyan-500">Treatments</a></li>
-              <li><a href="" class="hover:text-cyan-500">Testimonials</a></li>
-              <li><a href="" class="hover:text-cyan-500">Blog</a></li>
-              <li><a href="" class="hover:text-cyan-500">Contact Us</a></li>
-              <li class="border p-2 rounded-sm hover:bg-cyan-500">
-                <a href="">Book Appointment</a>
-              </li>
-          </div>
+          <h3 class="text-2xl uppercase font-bold hover:text-cyan-500">Logo</h3>
+          <span class="text-2xl xl:hidden lg:hidden md:hidden sm:block">
+            <ion-icon name="menu"></ion-icon>
+          </span>
+          <ul
+            class="xl:flex lg:flex md:flex xl:gap-5 lg:gap-5 md:gap-5 xl:static lg:static md:static xl:opacity-100 lg:opacity-100 md:opacity-100 justify-center items-center text-sm sm:absolute sm:left-0 sm:bg-teal-300 sm:bg-opacity-75 sm:w-full xl:w-auto lg:w-auto md:w-auto sm:p-5 xl:px-0 lg:px-0 md:px-0 xl:bg-transparent lg:bg-transparent md:bg-transparent sm:opacity-0 sm:top-[75px] sm:transition-all sm:ease-in sm:duration-500"
+          >
+            <li class="sm:py-2">
+              <a href="" class="hover:text-cyan-500">About Us</a>
+            </li>
+            <li class="sm:py-2">
+              <a href="" class="hover:text-cyan-500">Treatments</a>
+            </li>
+            <li class="sm:py-2">
+              <a href="" class="hover:text-cyan-500">Testimonials</a>
+            </li>
+            <li class="sm:py-2">
+              <a href="" class="hover:text-cyan-500">Blog</a>
+            </li>
+            <li class="sm:py-2">
+              <a href="" class="hover:text-cyan-500">Contact Us</a>
+            </li>
+            <li
+              class="border xl:lg:md:p-2 rounded-sm hover:bg-cyan-500 sm:w-48 sm:p-2"
+            >
+              <a href="" class="">Book Appointment</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
     <!-- banner section -->
-    <section
-      class=""
-    >
-      <div class="w-1/2 px-5 flex flex-col gap-3 max-w-inner text-white absolute top-1/2 -translate-y-1/2  xl:lg:ml-[8.5rem]  md:sm:left-0">
+    <section class="">
+      <div
+        class="w-1/2 px-5 flex flex-col gap-3 max-w-inner text-white absolute top-1/2 -translate-y-1/2 xl:lg:ml-[8.5rem] md:sm:left-0"
+      >
         <h2 class="text-3xl font-bold">
           A better life starts with a beautiful smile.
         </h2>
@@ -75,199 +98,333 @@
       </div>
     </section>
     <main>
-        <!-- 1st section -->
-         <section class="my-16">
-            <div class="max-w-inner mx-auto flex flex-col justify-center items-center gap-16 px-5">
-                <!-- top -->
-                <div class="xl:flex xl:flex-row lg:flex lg:flex-row sm:flex sm:flex-col md:flex md:flex-col justify-center items-start xl:gap-20 lg:gap-20 md:gap-3 sm:gap-3">
-                    <div class="basis-1/2">
-                        <h3 class="text-xl font-bold">Welcome to the Dentist Office of Dr.Thomas Dooley</h3>
-                        <p class="mt-3 text-justify text-sm leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam esse asperiores sequi, quo ullam unde dolore! Perspiciatis, adipisci corrupti ipsam ipsum eos asperiores nisi minus autem obcaecati excepturi rerum impedit.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut voluptate ipsa odio, totam, cum error, velit provident ad fugit hic deserunt.
-                        </p>
-                    </div>
-                    <div class="flex basis-1/2 flex-col gap-10 xl:px-10 xl:mt-0 lg:px-10 lg:mt-0 md:mt-20 md:px-0 sm:mt-20 sm:px-0">
-                        <div>
-                            <h5 class="relative text-lg font-semibold before:absolute before:content-[''] before:w-10 before:h-10 before:bg-sky-500 before:rounded-full 
-                            xl:before:top-0 xl:before:-left-14 lg:before:top-0 lg:before:-left-14 sm:before:-top-12 sm:before:left-0
-                            md:before:-top-12 md:before:left-0">Everything You Need Under One Roof</h5>
-                            <p class="text-sm leading-6 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error aut rerum placeat doloremque nihil officia voluptates quaerat.</p>
-                        </div>
-                        <div>
-                            <h5 class="text-lg font-semibold relative before:absolute before:content-[''] before:w-10 before:h-10 before:bg-sky-500 before:rounded-full before:top-0 before:-left-14
-                            xl:before:top-0 xl:before:-left-14 lg:before:top-0 lg:before:-left-14 sm:before:-top-12 sm:before:left-0
-                            md:before:-top-12 md:before:left-0
-                            sm:mt-10">Our Patient-Focused Approach</h5>
-                            <p class="text-sm leading-6 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error aut rerum placeat doloremque nihil officia voluptates quaerat.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- bottom -->
-                <div class="xl:flex xl:flex-row lg:flex lg:flex-row md:grid md:grid-cols-2 md:w-[100%] sm:grid sm:grid-cols-1 sm:w-[100%] justify-center items-center gap-5 ">
-                    <!-- 1 -->
-                     <div class="bg-cyan-100 flex flex-col xl:basis-1/4 lg:basis-1/4 justify-center items-center gap-5 p-5 shadow-md ronded-md">
-                        <img src="./assets/img/teeth-whitening.svg" alt="">
-                        <div class="flex flex-col justify-center items-center gap-3 text-center">
-                            <h5 class="font-bold text-lg">Teeth Whitening</h5>
-                            <p class="text-sm">Let us show you how our experience.</p>
-                            <a href="" class="text-sm">Read More</a>
-                        </div>
-                     </div>
-                     <!-- 2 -->
-                     <div class="bg-cyan-100 flex flex-col basis-1/4 justify-center items-center gap-5 p-5 shadow-md ronded-md">
-                        <img src="./assets/img/oral-surgery.svg" alt="">
-                        <div class="flex flex-col justify-center items-center gap-3 text-center">
-                            <h5 class="font-bold text-lg">Oral Surgery</h5>
-                            <p class="text-sm">Let us show you how our experience.</p>
-                            <a href="" class="text-sm">Read More</a>
-                        </div>
-                     </div>
-                     <!-- 3 -->
-                     <div class="bg-cyan-100 flex flex-col basis-1/4 justify-center items-center gap-5 p-5 shadow-md ronded-md">
-                        <img src="./assets/img/painless-dentistry.svg" alt="">
-                        <div class="flex flex-col justify-center items-center gap-3 text-center">
-                            <h5 class="font-bold text-lg">Painless Dentistry</h5>
-                            <p class="text-sm">Let us show you how our experience.</p>
-                            <a href="" class="text-sm">Read More</a>
-                        </div>
-                     </div>
-                     <!-- 4 -->
-                     <div class="bg-cyan-100 flex flex-col basis-1/4 justify-center items-center gap-5 p-5 shadow-md ronded-md">
-                        <img src="./assets/img/periodontics.svg" alt="">
-                        <div class="flex flex-col justify-center items-center gap-3 text-center">
-                            <h5 class="font-bold text-lg">Periodontics</h5>
-                            <p class="text-sm">Let us show you how our experience.</p>
-                            <a href="" class="text-sm">Read More</a>
-                        </div>
-                     </div>
-                </div>
+      <!-- 1st section -->
+      <section class="my-16">
+        <div
+          class="max-w-inner mx-auto flex flex-col justify-center items-center gap-16 px-5"
+        >
+          <!-- top -->
+          <div
+            class="xl:flex xl:flex-row lg:flex lg:flex-row sm:flex sm:flex-col md:flex md:flex-col justify-center items-start xl:gap-20 lg:gap-20 md:gap-3 sm:gap-3"
+          >
+            <div class="basis-1/2">
+              <h3 class="text-xl font-bold">
+                Welcome to the Dentist Office of Dr.Thomas Dooley
+              </h3>
+              <p class="mt-3 text-justify text-sm leading-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam esse asperiores sequi, quo ullam unde dolore!
+                Perspiciatis, adipisci corrupti ipsam ipsum eos asperiores nisi
+                minus autem obcaecati excepturi rerum impedit. Lorem ipsum,
+                dolor sit amet consectetur adipisicing elit. Ut voluptate ipsa
+                odio, totam, cum error, velit provident ad fugit hic deserunt.
+              </p>
             </div>
-         </section>
-         <!-- 2nd Section -->
-          <section class="bg-sky-50">
-            <div class="max-w-inner mx-auto xl:flex lg:flex xl:justify-center lg:justify-center xl:items-start lg:items-start px-5 py-16 md:grid md:grid-cols-1 sm:grid sm:grid-cols-1    md:place-items-center
-            sm:place-items-center
-            md:gap-10 sm:gap-10
-           ">
-                        <!-- left -->
-                    <div class="flex flex-col justify-center gap-5 xl:w-1/2  lg:w-1/2 md:w-[100%] sm:w-[100%]">
-                            <h3 class="font-bold text-lg">Why choose the Mesothelioma Center?</h3>
-                            <p class="text-sm leading-6 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores explicabo, dignissimos quibusdam sit illum architecto qui quidem reiciendis odit temporibus tempore doloribus modi alias officia nemo fuga nisi quisquam minima.</p>
-                    </div>
-                    <!-- right -->
-                    <div class="flex flex-col items-center gap-2 xl:w-1/2  lg:w-1/2  md:w-[100%] sm:w-[100%] ">
-                        <div class="xl:w-72 lg:w-72 h-44 rounded-sm bg-slate-400 md:w-[100%] sm:w-[100%]"></div>
-                        <p class="text-sm text-center">This is a rectangel.</p>
-                    </div>
+            <div
+              class="flex basis-1/2 flex-col gap-10 xl:px-10 xl:mt-0 lg:px-10 lg:mt-0 md:mt-20 md:px-0 sm:mt-20 sm:px-0"
+            >
+              <div>
+                <h5
+                  class="relative text-lg font-semibold before:absolute before:content-[''] before:w-10 before:h-10 before:bg-sky-500 before:rounded-full xl:before:top-0 xl:before:-left-14 lg:before:top-0 lg:before:-left-14 sm:before:-top-12 sm:before:left-0 md:before:-top-12 md:before:left-0"
+                >
+                  Everything You Need Under One Roof
+                </h5>
+                <p class="text-sm leading-6 text-justify">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Error aut rerum placeat doloremque nihil officia voluptates
+                  quaerat.
+                </p>
+              </div>
+              <div>
+                <h5
+                  class="text-lg font-semibold relative before:absolute before:content-[''] before:w-10 before:h-10 before:bg-sky-500 before:rounded-full before:top-0 before:-left-14 xl:before:top-0 xl:before:-left-14 lg:before:top-0 lg:before:-left-14 sm:before:-top-12 sm:before:left-0 md:before:-top-12 md:before:left-0 sm:mt-10"
+                >
+                  Our Patient-Focused Approach
+                </h5>
+                <p class="text-sm leading-6 text-justify">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Error aut rerum placeat doloremque nihil officia voluptates
+                  quaerat.
+                </p>
+              </div>
             </div>
-          </section>
-          <!-- 3rd section -->
-           <section class="my-16">
-            <div class="max-w-inner mx-auto px-5">
-                <div class="flex flex-col justify-center gap-10">
-                    <!-- title -->
-                    <div class="flex flex-col gap-1">
-                        <h4 class="text-xl font-bold">Health Blog</h4>
-                        <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci expedita a quis, nisi.</p>
-                        <a href="" class="mt-3 text-green-500 font-semibold">View All Posts</a>
-                    </div>
-                    <!-- card -->
-                     <div class="xl:flex lg:flex items-center xl:gap-5 lg:gap-5 md:grid md:grid-cols-2
-                     md:place-items-center sm:grid sm:grid-cols-1 sm:place-items-center md:gap-5 sm:gap-5">
-                        <!-- 1 -->
-                        <div class="flex flex-col xl:w-52 lg:w-52 md:w-[100%] sm:w-[100%] gap-3 shadow-md">
-                            <div class="bg-sky-100 h-32"></div>
-                            <div class="flex flex-col gap-3 p-5 ">
-                                <h6 class="text-green-400 text-sm">Business <span class="text-black text-sm">29 Nov 2019</span></h6>
-                                <h3>Card Title</h3>
-                                <p class="text-sm">This card has supporting text below as a natural lead-in to additional content.</p>
-                                <div class="flex gap-3 items-center mt-3">
-                                    <div class="w-8 h-8 rounded-full bg-sky-100"></div>
-                                    <p class="text-sm">By <span class="font-semibold">Abby Sims</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 2 -->
-                        <div class="flex flex-col xl:w-52 lg:w-52 md:w-[100%] sm:w-[100%] gap-3 shadow-md">
-                            <div class="bg-sky-100 h-32"></div>
-                            <div class="flex flex-col gap-3 p-5 ">
-                                <h6 class="text-green-400 text-sm">Business <span class="text-black text-sm">29 Nov 2019</span></h6>
-                                <h3>Card Title</h3>
-                                <p class="text-sm">This card has supporting text below as a natural lead-in to additional content.</p>
-                                <div class="flex gap-3 items-center mt-3">
-                                    <div class="w-8 h-8 rounded-full bg-sky-100"></div>
-                                    <p class="text-sm">By <span class="font-semibold">Abby Sims</span></p>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-                </div>
+          </div>
+          <!-- bottom -->
+          <div
+            class="xl:flex xl:flex-row lg:flex lg:flex-row md:grid md:grid-cols-2 md:w-[100%] sm:grid sm:grid-cols-1 sm:w-[100%] justify-center items-center gap-5"
+          >
+            <!-- 1 -->
+            <div
+              class="bg-cyan-100 flex flex-col xl:basis-1/4 lg:basis-1/4 justify-center items-center gap-5 p-5 shadow-md ronded-md"
+            >
+              <img src="./assets/img/teeth-whitening.svg" alt="" />
+              <div
+                class="flex flex-col justify-center items-center gap-3 text-center"
+              >
+                <h5 class="font-bold text-lg">Teeth Whitening</h5>
+                <p class="text-sm">Let us show you how our experience.</p>
+                <a href="" class="text-sm">Read More</a>
+              </div>
             </div>
-           </section>
-           <!-- 4th section -->
-            <section class="py-10 bg-gradient-to-r from-blue-400 via-cyan-300 to-teal-500">
-                <div class="xl:flex lg:flex md:grid md:grid-cols-1 sm:grid sm:grid-cols-1 md:place-items-center sm:place-items-center justify-center items-center gap-4">
-                    <p class="text-white text-sm font-semibold text-center">Get in touch with us today!</p>
-                    <p class="text-white text-sm font-semibold text-center">Call us on: +1 562-789-1935</p>
-                    <a href="" class="p-2 bg-white text-teal-400 text-sm rounded-sm text-center">Book Appointment</a>
+            <!-- 2 -->
+            <div
+              class="bg-cyan-100 flex flex-col basis-1/4 justify-center items-center gap-5 p-5 shadow-md ronded-md"
+            >
+              <img src="./assets/img/oral-surgery.svg" alt="" />
+              <div
+                class="flex flex-col justify-center items-center gap-3 text-center"
+              >
+                <h5 class="font-bold text-lg">Oral Surgery</h5>
+                <p class="text-sm">Let us show you how our experience.</p>
+                <a href="" class="text-sm">Read More</a>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div
+              class="bg-cyan-100 flex flex-col basis-1/4 justify-center items-center gap-5 p-5 shadow-md ronded-md"
+            >
+              <img src="./assets/img/painless-dentistry.svg" alt="" />
+              <div
+                class="flex flex-col justify-center items-center gap-3 text-center"
+              >
+                <h5 class="font-bold text-lg">Painless Dentistry</h5>
+                <p class="text-sm">Let us show you how our experience.</p>
+                <a href="" class="text-sm">Read More</a>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div
+              class="bg-cyan-100 flex flex-col basis-1/4 justify-center items-center gap-5 p-5 shadow-md ronded-md"
+            >
+              <img src="./assets/img/periodontics.svg" alt="" />
+              <div
+                class="flex flex-col justify-center items-center gap-3 text-center"
+              >
+                <h5 class="font-bold text-lg">Periodontics</h5>
+                <p class="text-sm">Let us show you how our experience.</p>
+                <a href="" class="text-sm">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 2nd Section -->
+      <section class="bg-sky-50">
+        <div
+          class="max-w-inner mx-auto xl:flex lg:flex xl:justify-center lg:justify-center xl:items-start lg:items-start px-5 py-16 md:grid md:grid-cols-1 sm:grid sm:grid-cols-1 md:place-items-center sm:place-items-center md:gap-10 sm:gap-10"
+        >
+          <!-- left -->
+          <div
+            class="flex flex-col justify-center gap-5 xl:w-1/2 lg:w-1/2 md:w-[100%] sm:w-[100%]"
+          >
+            <h3 class="font-bold text-lg">
+              Why choose the Mesothelioma Center?
+            </h3>
+            <p class="text-sm leading-6 text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              explicabo, dignissimos quibusdam sit illum architecto qui quidem
+              reiciendis odit temporibus tempore doloribus modi alias officia
+              nemo fuga nisi quisquam minima.
+            </p>
+          </div>
+          <!-- right -->
+          <div
+            class="flex flex-col items-center gap-2 xl:w-1/2 lg:w-1/2 md:w-[100%] sm:w-[100%]"
+          >
+            <div
+              class="xl:w-72 lg:w-72 h-44 rounded-sm bg-slate-400 md:w-[100%] sm:w-[100%]"
+            ></div>
+            <p class="text-sm text-center">This is a rectangel.</p>
+          </div>
+        </div>
+      </section>
+      <!-- 3rd section -->
+      <section class="my-16">
+        <div class="max-w-inner mx-auto px-5">
+          <div class="flex flex-col justify-center gap-10">
+            <!-- title -->
+            <div class="flex flex-col gap-1">
+              <h4 class="text-xl font-bold">Health Blog</h4>
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Adipisci expedita a quis, nisi.
+              </p>
+              <a href="" class="mt-3 text-green-500 font-semibold"
+                >View All Posts</a
+              >
+            </div>
+            <!-- card -->
+            <div
+              class="xl:flex lg:flex items-center xl:gap-5 lg:gap-5 md:grid md:grid-cols-2 md:place-items-center sm:grid sm:grid-cols-1 sm:place-items-center md:gap-5 sm:gap-5"
+            >
+              <!-- 1 -->
+              <div
+                class="flex flex-col xl:w-52 lg:w-52 md:w-[100%] sm:w-[100%] gap-3 shadow-md"
+              >
+                <div class="bg-sky-100 h-32"></div>
+                <div class="flex flex-col gap-3 p-5">
+                  <h6 class="text-green-400 text-sm">
+                    Business <span class="text-black text-sm">29 Nov 2019</span>
+                  </h6>
+                  <h3>Card Title</h3>
+                  <p class="text-sm">
+                    This card has supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                  <div class="flex gap-3 items-center mt-3">
+                    <div class="w-8 h-8 rounded-full bg-sky-100"></div>
+                    <p class="text-sm">
+                      By <span class="font-semibold">Abby Sims</span>
+                    </p>
+                  </div>
                 </div>
-            </section>
-            <footer class="bg-slate-900 py-10">
-                <div class="max-w-inner mx-auto xl:flex lg:flex px-5  justify-center xl:items-start lg:items-start xl:gap-[10rem] lg:gap-[10rem] md:grid md:grid-cols-2 md:place-items-center sm:grid sm:grid-cols-1 md:gap-8 sm:gap-8 md:w-[100%] sm:w-[100%]">
-                    <!-- 1 -->
-                    <div class="flex flex-col gap-2 justify-center items-start text-white xl:w-2/4 lg:w-2/4 md:w-[100%] sm:w-[100%]">
-                        <h3 class="font-bold textsm mb-1">LOGO</h3>
-                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="text-sm text-gray-400">Subscribe for our newsletter</p>
-                        <div class="flex gap-3 bg-white p-3 rounded-sm md:w-[100%] sm:w-[100%] md:justify-between sm:justify-between">
-                            <input type="email" name="" id="" placeholder="Enter Your Email Address" class="text-gray-500 text-sm border-none outline-none">
-                            <button class="bg-teal-400 text-white text-sm w-20 py-2 rounded-md">Subscribe</button>
-                        </div>
-                    </div>
-                     <!-- 2 -->
-                    <div class="flex flex-col justify-start items-start xl:w-1/4 lg:w-1/4 md:w-[100%] sm:w-[100%]">
-                        <h3 class="mb-1 text-gray-500 text-sm font-semibold">TREATMENTS</h3>
-                        <ul class="text-white text-sm leading-6">
-                            <li>General Dentisty</li>
-                            <li>Cosmetic Dentisty</li>
-                            <li>Oral Health</li>
-                        </ul>
-                    </div>
-                    <!-- 3 -->
-                    <div class="flex flex-col justify-start items-start xl:w-2/4 lg:w-2/4 md:w-[100%] sm:w-[100%] leading-6">
-                        <h3 class="mb-1 text-gray-500 text-sm font-semibold">CONTACT DETAILS</h3>
-                        <ul class="text-white text-sm leading-6">
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <span>1985 Kerry Wsy, Whittier, CA, USA</span></li>
-                            <li><i class="fa-regular fa-clock"></i>
-                            <span>Mon-Fri: 9:00 - 19:00 <br>Closed on Weekends</span></li>
-                            <li><i class="fa-solid fa-phone"></i>
-                                <span>+1 562-789-1953</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                <span>test@example.com</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- 4 -->
-                    <div class="flex flex-col justify-start items-start gap-5 xl:w-2/4 lg:w-2/4 md:w-[100%] sm:w-[100%]">
-                        <h3 class="mb-1 text-gray-500 text-sm font-semibold">WE'RE SOCIAL</h3>
-                        <div class="flex justify-center items-center gap-4 text-white">
-                            <i class="fa-brands fa-facebook hover:text-cyan-500"></i>
-                            <i class="fa-brands fa-twitter hover:text-cyan-500"></i>
-                            <i class="fa-brands fa-instagram hover:text-cyan-500"></i>
-                            <i class="fa-brands fa-youtube hover:text-cyan-500"></i>
-                        </div>
-                        <div class="xl:flex-col lg:flex-col md:flex sm:flex">
-                          <p class="text-sm text-white text-opacity-15">@2018ProDentist.</p>
-                          <p class="text-sm text-white text-opacity-15"> All Rights Reserved.</p>
-                        </div>
-                        
-                    </div>
+              </div>
+              <!-- 2 -->
+              <div
+                class="flex flex-col xl:w-52 lg:w-52 md:w-[100%] sm:w-[100%] gap-3 shadow-md"
+              >
+                <div class="bg-sky-100 h-32"></div>
+                <div class="flex flex-col gap-3 p-5">
+                  <h6 class="text-green-400 text-sm">
+                    Business <span class="text-black text-sm">29 Nov 2019</span>
+                  </h6>
+                  <h3>Card Title</h3>
+                  <p class="text-sm">
+                    This card has supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                  <div class="flex gap-3 items-center mt-3">
+                    <div class="w-8 h-8 rounded-full bg-sky-100"></div>
+                    <p class="text-sm">
+                      By <span class="font-semibold">Abby Sims</span>
+                    </p>
+                  </div>
                 </div>
-            </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 4th section -->
+      <section
+        class="py-10 bg-gradient-to-r from-blue-400 via-cyan-300 to-teal-500"
+      >
+        <div
+          class="xl:flex lg:flex md:grid md:grid-cols-1 sm:grid sm:grid-cols-1 md:place-items-center sm:place-items-center justify-center items-center gap-4"
+        >
+          <p class="text-white text-sm font-semibold text-center">
+            Get in touch with us today!
+          </p>
+          <p class="text-white text-sm font-semibold text-center">
+            Call us on: +1 562-789-1935
+          </p>
+          <a
+            href=""
+            class="p-2 bg-white text-teal-400 text-sm rounded-sm text-center"
+            >Book Appointment</a
+          >
+        </div>
+      </section>
+      <footer class="bg-slate-900 py-10">
+        <div
+          class="max-w-inner mx-auto xl:flex lg:flex px-5 justify-center xl:items-start lg:items-start xl:gap-[10rem] lg:gap-[10rem] md:grid md:grid-cols-2 md:place-items-center sm:grid sm:grid-cols-1 md:gap-8 sm:gap-8 md:w-[100%] sm:w-[100%]"
+        >
+          <!-- 1 -->
+          <div
+            class="flex flex-col gap-2 justify-center items-start text-white xl:w-2/4 lg:w-2/4 md:w-[100%] sm:w-[100%]"
+          >
+            <h3 class="font-bold textsm mb-1">LOGO</h3>
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <p class="text-sm text-gray-400">Subscribe for our newsletter</p>
+            <div
+              class="flex gap-3 bg-white p-3 rounded-sm md:w-[100%] sm:w-[100%] md:justify-between sm:justify-between"
+            >
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Enter Your Email Address"
+                class="text-gray-500 text-sm border-none outline-none"
+              />
+              <button
+                class="bg-teal-400 text-white text-sm w-20 py-2 rounded-md"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div
+            class="flex flex-col justify-start items-start xl:w-1/4 lg:w-1/4 md:w-[100%] sm:w-[100%]"
+          >
+            <h3 class="mb-1 text-gray-500 text-sm font-semibold">TREATMENTS</h3>
+            <ul class="text-white text-sm leading-6">
+              <li>General Dentisty</li>
+              <li>Cosmetic Dentisty</li>
+              <li>Oral Health</li>
+            </ul>
+          </div>
+          <!-- 3 -->
+          <div
+            class="flex flex-col justify-start items-start xl:w-2/4 lg:w-2/4 md:w-[100%] sm:w-[100%] leading-6"
+          >
+            <h3 class="mb-1 text-gray-500 text-sm font-semibold">
+              CONTACT DETAILS
+            </h3>
+            <ul class="text-white text-sm leading-6">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>1985 Kerry Wsy, Whittier, CA, USA</span>
+              </li>
+              <li>
+                <i class="fa-regular fa-clock"></i>
+                <span>Mon-Fri: 9:00 - 19:00 <br />Closed on Weekends</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>+1 562-789-1953</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>test@example.com</span>
+              </li>
+            </ul>
+          </div>
+          <!-- 4 -->
+          <div
+            class="flex flex-col justify-start items-start gap-5 xl:w-2/4 lg:w-2/4 md:w-[100%] sm:w-[100%]"
+          >
+            <h3 class="mb-1 text-gray-500 text-sm font-semibold">
+              WE'RE SOCIAL
+            </h3>
+            <div class="flex justify-center items-center gap-4 text-white">
+              <i class="fa-brands fa-facebook hover:text-cyan-500"></i>
+              <i class="fa-brands fa-twitter hover:text-cyan-500"></i>
+              <i class="fa-brands fa-instagram hover:text-cyan-500"></i>
+              <i class="fa-brands fa-youtube hover:text-cyan-500"></i>
+            </div>
+            <div class="xl:flex-col lg:flex-col md:flex sm:flex">
+              <p class="text-sm text-white text-opacity-15">@2018ProDentist.</p>
+              <p class="text-sm text-white text-opacity-15">
+                All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
+    <script>
+      let item = document.querySelector("ul");
+      const menuButton = document.querySelector("ion-icon[name='menu']");
+      menuButton.addEventListener("click", (e) => {
+        item.classList.toggle("sm:opacity-100");
+      });
+      // function menu() {
+      //   // e.name === "menu" ? (e.name = "close") : (e.name = "menu");
+      //   menu.classList.toggle("block");
+      // }
+    </script>
   </body>
 </html>
