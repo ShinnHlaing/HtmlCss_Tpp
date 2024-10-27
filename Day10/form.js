@@ -1,37 +1,79 @@
-var formInput = document.querySelectorAll("input");
-var submit = document.getElementById("submit");
-var showRequire = document.getElementsByClassName("notiText");
-// input
-var user = document.getElementById("name");
-var lastName = document.getElementById("lastname");
-var id = document.getElementById("id");
-var email = document.getElementById("email");
-var password = document.getElementById("password");
-var confirm = document.getElementById("confirm");
-// p
-var pName = document.getElementById("pName");
-var pLast = document.getElementById("pLName");
-var pId = document.getElementById("pId");
-var pEmail = document.getElementById("pEmail");
-var pPw = document.getElementById("pPw");
-var pwConfirm = document.getElementById("pConfirm");
+let submit = document.getElementById("submit");
+let form = document.getElementById("form");
+let username = document.getElementById("name");
+let lastname = document.getElementById("lastname");
+let id = document.getElementById("id");
+let email = document.getElementById("email");
+let pw = document.getElementById("password");
+let confirm = document.getElementById("confirm");
 
-submit.addEventListener("click", function (event) {
-  event.preventDefault();
-  // var fullName = user.value;
-  // var lastname = lastName.value;
-  // var userId = id.value;
-  // var userEmail = email.value;
-  // var userPw = password.value;
-  // var pwConfirm = confirm.value;
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  check();
 });
 
-// formInput.forEach(function (input) {
-//   console.log(input.value);
+let check = () => {
+  let nameValue = username.value.trim();
+  let lastnameValue = lastname.value.trim();
+  let emailValue = email.value.trim();
+  let idValue = id.value.trim();
+  let pwValue = pw.value.trim();
+  let confirmValue = confirm.value.trim();
+  // name
+  if (nameValue === "") {
+    alertMsg(username, "Username is required");
+  } else {
+    successMsg(username);
+  }
+  // email
+  if (emailValue === "") {
+    alertMsg(email, "Email is required");
+  } else {
+    successMsg(email);
+  }
+  // lastname
+  if (lastnameValue === "") {
+    alertMsg(lastname, "lastname is required");
+  } else {
+    successMsg(lastname);
+  }
+  // id
+  if (idValue === "") {
+    alertMsg(id, "id is required");
+  } else {
+    successMsg(id);
+  }
+  // password
+  if (pwValue === "") {
+    alertMsg(pw, "password is required");
+  } else if (pwValue.length < 8) {
+    alertMsg(pw, "Password must be at least 8 character.");
+  } else {
+    successMsg(pw);
+  }
+  // pw confirm
+  if (confirmValue === "") {
+    alertMsg(confirm, "Please confirm your Password");
+  } else if (pwValue !== confirmValue) {
+    alertMsg(confirm, "Passwords doesn't match");
+  } else {
+    successMsg(confirm);
+  }
+};
 
-//   if (input.value === "") {
-//     console.log("reqired");
-//   } else {
-//     console.log("ok");
-//   }
-// });
+let successMsg = (element) => {
+  let parentDiv = element.parentElement;
+  let alertErr = parentDiv.querySelector(".error");
+  alertErr.innerText = "";
+  parentDiv.classList.add("success");
+  parentDiv.classList.remove("error");
+};
+
+let alertMsg = (element, message) => {
+  let parentDiv = element.parentElement;
+  let alertErr = parentDiv.querySelector(".error");
+  alertErr.innerText = message;
+  parentDiv.classList.add("error");
+  parentDiv.classList.remove("success");
+};
