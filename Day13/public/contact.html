@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/day13.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Content</title>
+  </head>
+  <body class="bg-white">
+    <header class="min-h-16 bg-gray fixed w-full top-0 shadow-md text-white">
+      <nav class="flex justify-between items-center p-3">
+        <div class="flex justify-center items-center gap-5">
+          <i class="fa-solid fa-bars" id="btn"></i>
+          <h3 class="font-dancing text-3xl">logo</h3>
+        </div>
+        <ul class="flex gap-5">
+          <li>
+            <a href=""><i class="fa-solid fa-bell"></i> </a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-envelope"></i> </a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="w-full flex mt-16">
+      <!-- left -->
+      <aside class="">
+        <div class="text-white">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Tables</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </aside>
+      <!-- right -->
+      <section id="content">
+        <div class="p-3 w-full flex justify-center h-custom">
+          <!-- left -->
+          <div
+            class="w-1/2 grid grid-cols-2 place-items-center content-center gap-5"
+          >
+            <!-- 1 -->
+            <div
+              class="flex flex-col w-64 p-5 justify-center items-start gap-3 bg-white rounded-md shadow-md"
+            >
+              <i class="fa-solid fa-location-dot text-orange text-lg"></i>
+              <h4>Address</h4>
+              <h5>A109 Adam Street</h5>
+              <h5>New York, NY 535022</h5>
+            </div>
+            <!-- 2 -->
+            <div
+              class="flex flex-col justify-center items-start gap-3 bg-white w-64 p-5 rounded-md shadow-md"
+            >
+              <i class="fa-solid fa-phone text-orange text-lg"></i>
+              <h4>Call Us</h4>
+              <h5>+1 5589 55488 55</h5>
+              <h5>+1 6678 25445 41</h5>
+            </div>
+            <!-- 3 -->
+            <div
+              class="flex flex-col justify-center items-start gap-3 bg-white w-64 p-5 rounded-md shadow-md"
+            >
+              <i class="fa-solid fa-envelope text-orange text-lg"></i>
+              <h4>Email Us</h4>
+              <h5>Info@example.com</h5>
+              <h5>contact@example.com</h5>
+            </div>
+            <!-- 4 -->
+            <div
+              class="flex flex-col justify-center items-start gap-3 bg-white w-64 p-5 rounded-md shadow-md"
+            >
+              <i class="fa-regular fa-clock text-orange text-lg"></i>
+              <h4>Open Hours</h4>
+              <h5>Monday - Friday</h5>
+              <h5>9:00AM - 05:00PM</h5>
+            </div>
+          </div>
+          <!-- right -->
+          <div
+            class="w-1/2 flex flex-col justify-center rounded-md shadow-md p-5 bg-blue"
+          >
+            <form
+              action="
+            "
+              class="flex flex-col gap-5"
+            >
+              <div class="flex justify-between items-center gap-2">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="w-1/2 p-3 rounded-md border border-gray outline-none"
+                />
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Your Email"
+                  class="w-1/2 p-3 rounded-md border border-gray outline-none"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Subjet"
+                  class="w-full p-3 rounded-md border border-gray outline-none"
+                />
+              </div>
+              <div>
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Message"
+                  class="w-full rounded-md p-3 border border-gray outline-none"
+                ></textarea>
+              </div>
+              <button
+                class="w-40 p-3 rounded-md text-white text-sm shadow-md text-center flex mx-auto justify-center bg-orange"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- footer -->
+        <footer
+          class="flex justify-between items-center bg-gray w-full p-3 text-white"
+        >
+          <div>
+            <h5>@Copyright</h5>
+          </div>
+          <div>
+            <h5>Privacy Policy and Condition</h5>
+          </div>
+        </footer>
+      </section>
+    </main>
+    <script>
+      let aside = document.getElementsByTagName("aside")[0];
+      let content = document.getElementById("content");
+      document.addEventListener("DOMContentLoaded", () => {
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", () => {
+          aside.classList.toggle("active");
+          content.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

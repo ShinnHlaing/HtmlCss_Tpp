@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/day13.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-white">
+    <header class="min-h-16 bg-gray fixed w-full top-0 shadow-md text-white">
+      <nav class="flex justify-between items-center p-3">
+        <div class="flex justify-center items-center gap-5">
+          <i class="fa-solid fa-bars" id="btn"></i>
+          <h3 class="font-dancing text-3xl">logo</h3>
+        </div>
+        <ul class="flex gap-5">
+          <li>
+            <a href=""><i class="fa-solid fa-bell"></i> </a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-envelope"></i> </a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="w-full flex mt-16">
+      <!-- left -->
+      <aside class="">
+        <div class="text-white">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Tables</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </aside>
+      <!-- right -->
+      <section id="content">
+        <div
+          class="p-3 grid grid-cols-2 place-items-center content-center gap-5 bg-blue"
+        >
+          <!-- 1 -->
+          <div class="flex flex-col bg-white rounded-sm shadow-md gap-3 p-5">
+            <h3 class="text-blue font-semibold">Default Table</h3>
+            <table class="table-auto border-collapse p-3 text-sm">
+              <thead class="text-start">
+                <tr class="border-b border-gray text-left">
+                  <th class="px-5">#</th>
+                  <th class="px-5">Name</th>
+                  <th class="px-5">Position</th>
+                  <th class="px-5">Age</th>
+                  <th class="px-5">Start Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray">
+                  <td class="py-1 px-5">1</td>
+                  <td class="py-1 px-5">Brandon Jacob</td>
+                  <td class="py-1 px-5">Designer</td>
+                  <td class="py-1 px-5">28</td>
+                  <td class="py-1 px-5">2016-05-25</td>
+                </tr>
+                <tr class="border-b border-gray">
+                  <td class="py-1 px-5">2</td>
+                  <td class="py-1 px-5">Bridie Kessler</td>
+                  <td class="py-1 px-5">Developer</td>
+                  <td class="py-1 px-5">35</td>
+                  <td class="py-1 px-5">2014-12-05</td>
+                </tr>
+                <tr class="border-b border-gray">
+                  <td class="py-1 px-5">3</td>
+                  <td class="py-1 px-5">Ashleigh Langosh</td>
+                  <td class="py-1 px-5">Finance</td>
+                  <td class="py-1 px-5">45</td>
+                  <td class="py-1 px-5">2011-08-12</td>
+                </tr>
+                <tr class="border-b border-gray">
+                  <td class="py-1 px-5">4</td>
+                  <td class="py-1 px-5">Angus Grady</td>
+                  <td class="py-1 px-5">HR</td>
+                  <td class="py-1 px-5">34</td>
+                  <td class="py-1 px-5">2012-06-11</td>
+                </tr>
+                <tr class="border-b border-gray">
+                  <td class="py-1 px-5">5</td>
+                  <td class="py-1 px-5">Raheem Lehner</td>
+                  <td class="py-1 px-5">Dynamic Division Officer</td>
+                  <td class="py-1 px-5">47</td>
+                  <td class="py-1 px-5">2011-04-19</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- 2 -->
+          <div class="flex flex-col bg-white rounded-sm shadow-md gap-3 p-5">
+            <h3 class="text-blue font-semibold">Table with stripped rows</h3>
+            <table class="table-auto border-collapse w-full text-sm">
+              <thead class="text-start">
+                <tr class="border-b border-gray text-left">
+                  <th class="px-5">#</th>
+                  <th class="px-5">Name</th>
+                  <th class="px-5">Position</th>
+                  <th class="px-5">Age</th>
+                  <th class="px-5">Start Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray bg-gray">
+                  <td class="py-1 px-5">1</td>
+                  <td class="py-1 px-5">Brandon Jacob</td>
+                  <td class="py-1 px-5">Designer</td>
+                  <td class="py-1 px-5">28</td>
+                  <td class="py-1 px-5">2016-05-25</td>
+                </tr>
+                <tr class="border-b border-gray">
+                  <td class="py-1 px-5">2</td>
+                  <td class="py-1 px-5">Bridie Kessler</td>
+                  <td class="py-1 px-5">Developer</td>
+                  <td class="py-1 px-5">35</td>
+                  <td class="py-1 px-5">2014-12-05</td>
+                </tr>
+                <tr class="border-b border-gray bg-gray">
+                  <td class="py-1 px-5">3</td>
+                  <td class="py-1 px-5">Ashleigh Langosh</td>
+                  <td class="py-1 px-5">Finance</td>
+                  <td class="py-1 px-5">45</td>
+                  <td class="py-1 px-5">2011-08-12</td>
+                </tr>
+                <tr class="border-b border-gray">
+                  <td class="py-1 px-5">4</td>
+                  <td class="py-1 px-5">Angus Grady</td>
+                  <td class="py-1 px-5">HR</td>
+                  <td class="py-1 px-5">34</td>
+                  <td class="py-1 px-5">2012-06-11</td>
+                </tr>
+                <tr class="border-b border-gray bg-gray">
+                  <td class="py-1 px-5">5</td>
+                  <td class="py-1 px-5">Raheem Lehner</td>
+                  <td class="py-1 px-5">Dynamic Division Officer</td>
+                  <td class="py-1 px-5">47</td>
+                  <td class="py-1 px-5">2011-04-19</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- 3 -->
+          <div class="flex flex-col bg-white rounded-sm shadow-md gap-3 p-5">
+            <h3 class="text-blue font-semibold">Dark Table</h3>
+            <table
+              class="table-auto border-collapse text-white bg-black text-sm"
+            >
+              <thead class="text-start">
+                <tr class="border-b border-gray text-left">
+                  <th class="px-5">#</th>
+                  <th class="px-5">Name</th>
+                  <th class="px-5">Position</th>
+                  <th class="px-5">Age</th>
+                  <th class="px-5">Start Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray">
+                  <td class="py-1 px-5">1</td>
+                  <td class="py-1 px-5">Brandon Jacob</td>
+                  <td class="py-1 px-5">Designer</td>
+                  <td class="py-1 px-5">28</td>
+                  <td class="py-1 px-5">2016-05-25</td>
+                </tr>
+                <tr class="border-b border-gray">
+                  <td class="py-1 px-5">2</td>
+                  <td class="py-1 px-5">Bridie Kessler</td>
+                  <td class="py-1 px-5">Developer</td>
+                  <td class="py-1 px-5">35</td>
+                  <td class="py-1 px-5">2014-12-05</td>
+                </tr>
+                <tr class="border-b border-gray">
+                  <td class="py-1 px-5">3</td>
+                  <td class="py-1 px-5">Ashleigh Langosh</td>
+                  <td class="py-1 px-5">Finance</td>
+                  <td class="py-1 px-5">45</td>
+                  <td class="py-1 px-5">2011-08-12</td>
+                </tr>
+                <tr class="border-b border-gray">
+                  <td class="py-1 px-5">4</td>
+                  <td class="py-1 px-5">Angus Grady</td>
+                  <td class="py-1 px-5">HR</td>
+                  <td class="py-1 px-5">34</td>
+                  <td class="py-1 px-5">2012-06-11</td>
+                </tr>
+                <tr class="border-b border-gray">
+                  <td class="py-1 px-5">5</td>
+                  <td class="py-1 px-5">Raheem Lehner</td>
+                  <td class="py-1 px-5">Dynamic Division Officer</td>
+                  <td class="py-1 px-5">47</td>
+                  <td class="py-1 px-5">2011-04-19</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- 4 -->
+          <div class="flex flex-col bg-white rounded-sm shadow-md gap-3 p-5">
+            <h3 class="text-blue font-semibold">Table with hoverable rows</h3>
+            <table class="table-auto border-collapse text-sm">
+              <thead class="text-start">
+                <tr class="border-b border-gray text-left hover:bg-blue">
+                  <th class="px-5">#</th>
+                  <th class="px-5">Name</th>
+                  <th class="px-5">Position</th>
+                  <th class="px-5">Age</th>
+                  <th class="px-5">Start Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray hover:bg-blue">
+                  <td class="py-1 px-5">1</td>
+                  <td class="py-1 px-5">Brandon Jacob</td>
+                  <td class="py-1 px-5">Designer</td>
+                  <td class="py-1 px-5">28</td>
+                  <td class="py-1 px-5">2016-05-25</td>
+                </tr>
+                <tr class="border-b border-gray hover:bg-blue">
+                  <td class="py-1 px-5">2</td>
+                  <td class="py-1 px-5">Bridie Kessler</td>
+                  <td class="py-1 px-5">Developer</td>
+                  <td class="py-1 px-5">35</td>
+                  <td class="py-1 px-5">2014-12-05</td>
+                </tr>
+                <tr class="border-b border-gray hover:bg-blue">
+                  <td class="py-1 px-5">3</td>
+                  <td class="py-1 px-5">Ashleigh Langosh</td>
+                  <td class="py-1 px-5">Finance</td>
+                  <td class="py-1 px-5">45</td>
+                  <td class="py-1 px-5">2011-08-12</td>
+                </tr>
+                <tr class="border-b border-gray hover:bg-blue">
+                  <td class="py-1 px-5">4</td>
+                  <td class="py-1 px-5">Angus Grady</td>
+                  <td class="py-1 px-5">HR</td>
+                  <td class="py-1 px-5">34</td>
+                  <td class="py-1 px-5">2012-06-11</td>
+                </tr>
+                <tr class="border-b border-gray hover:bg-blue">
+                  <td class="py-1 px-5">5</td>
+                  <td class="py-1 px-5">Raheem Lehner</td>
+                  <td class="py-1 px-5">Dynamic Division Officer</td>
+                  <td class="py-1 px-5">47</td>
+                  <td class="py-1 px-5">2011-04-19</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- footer -->
+        <footer
+          class="flex justify-between items-center bg-gray w-full p-3 text-white"
+        >
+          <div>
+            <h5>@Copyright</h5>
+          </div>
+          <div>
+            <h5>Privacy Policy and Condition</h5>
+          </div>
+        </footer>
+      </section>
+    </main>
+    <script>
+      let aside = document.getElementsByTagName("aside")[0];
+      let content = document.getElementById("content");
+      document.addEventListener("DOMContentLoaded", () => {
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", () => {
+          aside.classList.toggle("active");
+          content.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
