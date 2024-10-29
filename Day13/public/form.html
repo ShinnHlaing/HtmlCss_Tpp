@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/day13.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./assets/js/form.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-white">
+    <header class="min-h-16 bg-gray fixed w-full top-0 shadow-md text-white">
+      <nav class="flex justify-between items-center p-3">
+        <div class="flex justify-center items-center gap-5">
+          <i class="fa-solid fa-bars" id="btn"></i>
+          <h3 class="font-dancing text-3xl">logo</h3>
+        </div>
+        <ul class="flex gap-5">
+          <li>
+            <a href=""><i class="fa-solid fa-bell"></i> </a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-envelope"></i> </a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="w-full flex mt-16">
+      <!-- left -->
+      <aside class="">
+        <div class="text-white">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="./table.html">Tables</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="">form</a></li>
+          </ul>
+        </div>
+      </aside>
+      <!-- right -->
+      <section id="content">
+        <div class="w-full p-3 bg-blue h-custom">
+          <h3>Multi Column Form</h3>
+          <form action="" id="form" class="flex flex-col items-center gap-3">
+            <!-- first Name -->
+            <div class="inner w-full flex flex-col">
+              <label for="name">Your Name</label>
+              <div class="right">
+                <input type="text" name="name" id="name" class="w-full" />
+                <div class="error"></div>
+              </div>
+            </div>
+            <!-- email -->
+            <div class="grid grid-cols-2 w-full gap-2">
+              <div class="inner">
+                <label for="email">Email</label>
+                <div class="right">
+                  <input type="email" name="email" id="email" class="w-full" />
+                  <div class="error"></div>
+                </div>
+              </div>
+              <!-- password -->
+              <div class="inner">
+                <label for="password">Password</label>
+                <div class="right">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="w-full"
+                  />
+                  <div class="error"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- address 1-->
+            <div class="inner w-full flex flex-col">
+              <label for="address">Address</label>
+              <div class="right">
+                <input type="text" name="address" id="address" class="w-full" />
+                <div class="error"></div>
+              </div>
+            </div>
+            <!-- address 2 -->
+            <div class="inner w-full flex flex-col">
+              <label for="address2">Address 2</label>
+              <div class="right">
+                <input
+                  type="text"
+                  name="address2"
+                  id="address2"
+                  class="w-full"
+                />
+                <div class="error"></div>
+              </div>
+            </div>
+            <!-- city state zip -->
+            <div class="grid grid-cols-3 gap-2 w-full">
+              <!-- city -->
+              <div class="inner">
+                <label for="city">City</label>
+                <div class="right">
+                  <input type="text" name="city" id="city" class="w-full" />
+                  <div class="error"></div>
+                </div>
+              </div>
+              <!-- state -->
+              <div class="inner">
+                <label
+                  for="
+                state"
+                  >State</label
+                >
+                <div class="right">
+                  <select name="state" id="state" class="w-full">
+                    <option value="">-- Select a State --</option>
+                    <option value="yangon">Yangon</option>
+                    <option value="mandalay">Mandalay</option>
+                    <option value="bago">Bago</option>
+                  </select>
+                  <div class="error"></div>
+                </div>
+              </div>
+              <!-- zip -->
+              <div class="inner">
+                <label for="zip">zip</label>
+                <div class="right">
+                  <input type="number" name="zip" id="zip" class="w-full" />
+                  <div class="error"></div>
+                </div>
+              </div>
+            </div>
+            <!-- check -->
+            <div class="inner flex gap-2 w-full justify-start">
+              <div class="right">
+                <input type="checkbox" name="check" id="check" />
+                <div class="error"></div>
+              </div>
+              <label for="check">check me out</label>
+            </div>
+            <!-- btn -->
+            <div class="flex items-center justify-center gap-2">
+              <button
+                type="submit"
+                id="submit"
+                class="bg-orange p-3 rounded-md text-white text-sm shadow-md"
+              >
+                submit
+              </button>
+              <button
+                type="reset"
+                id="reset"
+                class="bg-gray p-3 rounded-md text-white text-sm shadow-md"
+              >
+                reset
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- footer -->
+        <footer
+          class="flex justify-between items-center bg-gray w-full p-3 text-white"
+        >
+          <div>
+            <h5>@Copyright</h5>
+          </div>
+          <div>
+            <h5>Privacy Policy and Condition</h5>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

@@ -103,40 +103,51 @@
               action="
             "
               class="flex flex-col gap-5"
+              id="form"
             >
-              <div class="flex justify-between items-center gap-2">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  class="w-1/2 p-3 rounded-md border border-gray outline-none"
-                />
-                <input
-                  type="email"
-                  name=""
-                  id=""
-                  placeholder="Your Email"
-                  class="w-1/2 p-3 rounded-md border border-gray outline-none"
-                />
+              <div class="flex justify-between w-full items-centers">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="p-3 rounded-md border border-gray outline-none"
+                    id="name"
+                    name="name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Your Email"
+                    class="p-3 rounded-md border border-gray outline-none"
+                  />
+                </div>
               </div>
-              <div>
+
+              <div class="form-group">
                 <input
                   type="text"
-                  name=""
-                  id=""
+                  name="subject"
+                  id="subject"
                   placeholder="Subjet"
                   class="w-full p-3 rounded-md border border-gray outline-none"
                 />
               </div>
-              <div>
+              <div class="form-group">
                 <textarea
-                  name=""
-                  id=""
+                  name="textarea"
+                  id="message"
                   placeholder="Message"
                   class="w-full rounded-md p-3 border border-gray outline-none"
                 ></textarea>
               </div>
               <button
                 class="w-40 p-3 rounded-md text-white text-sm shadow-md text-center flex mx-auto justify-center bg-orange"
+                type="submit"
+                id="submitBtn"
               >
                 Send Message
               </button>
@@ -159,6 +170,10 @@
     <script>
       let aside = document.getElementsByTagName("aside")[0];
       let content = document.getElementById("content");
+      let fgroup = document.getElementsByClassName("form-group");
+      let form = document.getElementById("form");
+
+      // toggle
       document.addEventListener("DOMContentLoaded", () => {
         let btn = document.getElementById("btn");
         btn.addEventListener("click", () => {
@@ -166,6 +181,32 @@
           content.classList.toggle("active");
         });
       });
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        for (input of fgroup) {
+          let inputValue = input.firstElementChild.value.trim();
+          let attrValue = input.firstElementChild.getAttribute("name");
+
+          // remove lastchild error msg
+          if (input.lastElementChild.className.includes("error")) {
+            input.lastElementChild.remove();
+          }
+
+          // check empty
+          if (inputValue === "") {
+            let elementTag = document.createElement("p");
+            elementTag.textContent = "required" + " " + attrValue;
+            elementTag.classList.add("error", "text-orange", "text-sm");
+            input.append(elementTag);
+          }
+        }
+      });
+
+      // Array.from(fgroup).map((input) => {
+      //   console.log(input);
+      // });
     </script>
   </body>
 </html>

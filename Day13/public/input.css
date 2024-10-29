@@ -33,4 +33,7 @@
   #content.active {
     @apply w-full ml-0;
   }
+  #hideBox.show {
+    @apply block;
+  }
 }

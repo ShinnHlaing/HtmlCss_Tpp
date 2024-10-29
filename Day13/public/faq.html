@@ -16,6 +16,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./assets/js/faq.js" defer></script>
     <title>Document</title>
   </head>
   <body class="bg-white">
@@ -45,23 +46,56 @@
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="./table.html">Tables</a></li>
-            <li><a href="./product.html">Products</a></li>
-            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">FAQ</a></li>
             <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./form.html">form</a></li>
           </ul>
         </div>
       </aside>
       <!-- right -->
       <section id="content">
-        <div class="p-3">
-          <h3>Title</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
-            expedita esse necessitatibus quisquam quidem, consequuntur iure
-            praesentium eius sit voluptas soluta est nihil eaque, velit
-            obcaecati dignissimos veniam. Veritatis, incidunt!
-          </p>
+        <div
+          class="p-3 grid grid-cols grid-cols-2 place-items-center gap-3"
+          id="cardBox"
+        >
+          <!-- card 1-->
+          <div
+            class="flex flex-col justify-center p-3 gap-3 bg-gray shadow-md w-full"
+            id="card1"
+          >
+            <h3>Basic Question</h3>
+          </div>
+          <!-- cardend -->
+          <!-- 2 -->
+          <div
+            class="flex flex-col justify-center p-3 gap-3 bg-gray shadow-md w-full"
+            id="card2"
+          >
+            <h3>Title</h3>
+            <!-- start -->
+
+            <!-- end -->
+          </div>
+          <!-- 3 -->
+          <div
+            class="flex flex-col justify-center p-3 gap-3 bg-gray shadow-md w-full"
+            id="card3"
+          >
+            <h3>Title</h3>
+            <!-- start -->
+
+            <!-- end -->
+          </div>
+          <!-- 4 -->
+          <div
+            class="flex flex-col justify-center p-3 gap-3 bg-gray shadow-md w-full"
+            id="card4"
+          >
+            <h3>Title</h3>
+            <!-- start -->
+
+            <!-- end -->
+          </div>
         </div>
         <!-- footer -->
         <footer
@@ -76,16 +110,6 @@
         </footer>
       </section>
     </main>
-    <script>
-      let aside = document.getElementsByTagName("aside")[0];
-      let content = document.getElementById("content");
-      document.addEventListener("DOMContentLoaded", () => {
-        let btn = document.getElementById("btn");
-        btn.addEventListener("click", () => {
-          aside.classList.toggle("active");
-          content.classList.toggle("active");
-        });
-      });
-    </script>
   </body>
+  <script></script>
 </html>
