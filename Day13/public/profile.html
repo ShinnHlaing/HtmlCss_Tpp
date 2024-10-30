@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/day13.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./assets/js/profile.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-white">
+    <header class="min-h-16 bg-gray fixed w-full top-0 shadow-md text-white">
+      <nav class="flex justify-between items-center p-3">
+        <div class="flex justify-center items-center gap-5">
+          <i class="fa-solid fa-bars" id="btn"></i>
+          <h3 class="font-dancing text-3xl">logo</h3>
+        </div>
+        <ul class="flex gap-5">
+          <li>
+            <a href=""><i class="fa-solid fa-bell"></i> </a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-envelope"></i> </a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="w-full flex mt-16">
+      <!-- left -->
+      <aside class="">
+        <div class="text-white">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="./table.html">Tables</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="">form</a></li>
+          </ul>
+        </div>
+      </aside>
+      <!-- right -->
+      <section id="content">
+        <div class="w-full p-3 bg-blue h-custom">
+          <h3 class="text-xl font-semibold">Profile</h3>
+          <div class="flex flex-col gap-3 bg-white shadow-md p-3">
+            <ul class="flex items-center gap-5 shadow-md">
+              <li class="tab" data-field="overview">Overview</li>
+              <li class="tab" data-field="setting">Setting</li>
+              <li class="tab" data-field="change_password">Change Password</li>
+            </ul>
+            <div id="overview" class="box hidden">
+              <h3>Overview Content</h3>
+              <p>
+                assumenda, laboriosam eius tempore id qui. Rem beatae eos
+                repudiandae qui eligendi hic!
+              </p>
+            </div>
+            <div id="setting" class="box hidden">
+              <h3>Setting Content</h3>
+              <p>
+                Delectus magni, quibusdam sit nihil enim, accusamus officiis aut
+                assumenda, laboriosam eius tempore id qui. Rem beatae eos
+                repudiandae qui eligendi hic!
+              </p>
+            </div>
+            <div id="change_password" class="box hidden">
+              <h3>Change password Content</h3>
+              <p>
+                assumenda, laboriosam eius tempore id qui. Rem beatae eos
+                repudiandae qui eligendi hic!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- footer -->
+        <footer
+          class="flex justify-between items-center bg-gray w-full p-3 text-white"
+        >
+          <div>
+            <h5>@Copyright</h5>
+          </div>
+          <div>
+            <h5>Privacy Policy and Condition</h5>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

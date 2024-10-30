@@ -16,6 +16,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./assets/js/day13.js" defer></script>
     <title>Document</title>
   </head>
   <body class="bg-white">
@@ -45,7 +46,26 @@
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="./table.html">Tables</a></li>
-            <li><a href="./product.html">Products</a></li>
+            <div class="sideDiv">
+              <li class="sideNav" data-field="productMenu">
+                <span href="">Products</span>
+              </li>
+              <ul id="productMenu" class="subBox grid-cols-1 bg-orange hidden">
+                <li>product1</li>
+                <li>product2</li>
+                <li>product3</li>
+              </ul>
+            </div>
+            <div class="sideDiv">
+              <li class="sideNav" data-field="blogMenu">
+                <span href="">Blog</span>
+              </li>
+              <ul id="blogMenu" class="subBox grid-cols-1 bg-orange hidden">
+                <li>blog1</li>
+                <li>blog2</li>
+                <li>blog3</li>
+              </ul>
+            </div>
             <li><a href="./faq.html">FAQ</a></li>
             <li><a href="./contact.html">Contact</a></li>
             <li><a href="./form.html">form</a></li>
@@ -76,16 +96,5 @@
         </footer>
       </section>
     </main>
-    <script>
-      let aside = document.getElementsByTagName("aside")[0];
-      let content = document.getElementById("content");
-      document.addEventListener("DOMContentLoaded", () => {
-        let btn = document.getElementById("btn");
-        btn.addEventListener("click", () => {
-          aside.classList.toggle("active");
-          content.classList.toggle("active");
-        });
-      });
-    </script>
   </body>
 </html>
