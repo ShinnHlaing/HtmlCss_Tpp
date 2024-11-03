@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         box[val].classList.add("hidden");
       }
       if (getAttrVal === getId) {
-        box[index].classList.toggle("hidden");
+        box[index].classList.remove("hidden");
       }
     });
   }

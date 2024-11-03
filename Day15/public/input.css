@@ -16,14 +16,17 @@
       "Noto Color Emoji";
     --heading-font: "Poppins", sans-serif;
     --nav-font: "Raleway", sans-serif;
+    --fa-font-solid: "Font Awesome 6 Free";
   }
   :root {
     --background-color: #ffffff;
+    --background-trans: #ffffff7f;
     --default-color: #444444;
+    --title-border: rgba(128, 128, 128, 0.338);
     --heading-color: #2c4964;
     --accent-color: #1977cc;
-    --surface-color: #ffffff;
-    --contrast-color: #ffffff;
+    --surface-color: #f1f7fc;
+    --contrast-color: #87bff0e7;
     --nav-color: #2c4964;
     --nav-hover-color: #1977cc;
     --nav-mobile-background-color: #ffffff;

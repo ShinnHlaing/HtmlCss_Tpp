@@ -3,9 +3,10 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     screens: {
-      sm: "576px",
+      xs: "0px",
+      sm: "480px",
       md: "768px",
-      lg: "992px",
+      lg: "976px",
       xl: "1200px",
       xxl: "1400px",
     },
@@ -13,9 +14,12 @@ module.exports = {
       Poppins: "var(--heading-font)",
       roboto: "var(--default-font)",
       raleway: "var(--nav-font)",
+      font_awesome: "var(--fa-font-solid)",
     },
     colors: {
       bgColor: "var( --background-color)",
+      bgTrans: "var(--background-trans)",
+      titleBorder: "var(--title-border)",
       defaultColor: "var(--default-color)",
       headingColor: "var(--heading-color)",
       accentColor: "var(--accent-color)",
@@ -31,14 +35,14 @@ module.exports = {
     },
     extend: {
       height: {
-        custom: "calc(100vh - 64px)",
+        custom: "calc(100vh - 114px)",
       },
       maxWidth: {
         inner: "1200px",
       },
       backgroundImage: {
-        heroBg: "url('./public/assets/img/hero-bg.jpg')",
-        aboutImg: "url('./public/assets/img/about.jpg')",
+        heroBg: "url('../img/hero-bg.jpg')",
+        aboutImg: "url('./img/about.jpg')",
       },
     },
   },

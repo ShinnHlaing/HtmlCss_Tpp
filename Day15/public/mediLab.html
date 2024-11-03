@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <title>Document</title>
+    <script src="./assets/js/mediLab.js" defer></script>
   </head>
-  <body class="border-box">
-    <header class="w-full static shadow-md">
+  <body class="border-box relative">
+    <header class="w-full shadow-md fixed top-0 z-50">
       <div class="w-full bg-accentColor">
         <div
           class="max-w-inner mx-auto flex justify-between items-center font-roboto text-[14px] text-bgColor py-3"
@@ -35,24 +35,27 @@
           </div>
         </div>
       </div>
-      <nav class="w-full bg-bgColor sticky top-0">
+      <nav class="w-full bg-bgColor">
         <div class="max-w-inner mx-auto flex justify-between items-center py-3">
           <h3 class="text-[30px] font-Poppins text-headingColor font-extrabold">
             Medilab
           </h3>
+          <i
+            class="fa-solid fa-bars lg:hidden xl:hidden md:block sm:block xs:block"
+          ></i>
           <ul
-            class="font-raleway text-headingColor text-[15px] font-semibold flex gap-5 items-center"
+            class="font-raleway text-headingColor text-[15px] font-semibold xl:flex lg:flex gap-5 items-center md:hidden sm:hidden xs:hidden"
           >
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Departments</a></li>
-            <li><a href="#">Doctors</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#department">Departments</a></li>
+            <li><a href="#doctor">Doctors</a></li>
             <li class="flex gap-2 items-center">
               <a href="#">Dropdown</a>
               <i class="fa-solid fa-caret-down"></i>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li class="p-2 bg-accentColor text-bgColor text-center rounded-3xl">
               <a href="#">Make an Appointment</a>
             </li>
@@ -61,6 +64,1096 @@
       </nav>
     </header>
     <!-- banner -->
-    <section class="w-full bg-heroBg bg-cover"></section>
+    <a name="home"></a>
+    <section
+      class="w-full bg-heroBg bg-cover bg-center bg-no-repeat h-screen mt-[114px]"
+    >
+      <div class="max-w-inner mx-auto flex flex-col gap-10">
+        <!-- banner text -->
+        <div class="flex flex-col items-start justify-center mt-16">
+          <h3
+            class="font-Poppins text-headingColor text-[48px] font-bold uppercase"
+          >
+            Welcome to medilab
+          </h3>
+          <p class="font-roboto text-[24px] text-defaultColor">
+            We are team of talented designers making websites with Tailwind
+          </p>
+        </div>
+        <!-- boxes -->
+        <div class="grid grid-cols-4 my-8 place-items-center w-full">
+          <!-- box1 -->
+          <div
+            class="flex flex-col gap-5 text-bgColor bg-accentColor items-center justify-center w-[22rem] px-8 py-5 rounded-md"
+          >
+            <h3 class="font-Poppins text-[34px] font-semibold">
+              Why Choose Medilab?
+            </h3>
+            <p class="font-roboto text-[16px] text-justify">
+              It is important to take care of the patient, to be followed by the
+              patient, but it will happen at such a time that there is a lot of
+              work and pain. Duis or irure pain in reprimands the harsher pains
+              but and It is held because they However, at certain times or
+              needs, the choice of the body.
+            </p>
+            <a
+              href=""
+              class="font-roboto text-[16px] px-4 py-1 bg-contrastColor text-center rounded-3xl"
+              >Learn More<span class="ml-2">></span></a
+            >
+          </div>
+          <!-- 2 -->
+          <div
+            class="flex flex-col gap-5 text-navColor bg-bgTrans ml-14 items-center justify-start w-64 p-10 h-[21rem] rounded-md shadow-md"
+          >
+            <i class="fa-solid fa-clipboard-list text-5xl text-accentColor"></i>
+            <h3 class="font-Poppins text-[20px] font-semibold text-center">
+              The pleasures of the body are the same
+            </h3>
+            <p class="font-roboto text-[15px] text-center">
+              They are the result, or as it were, of something that is equal to
+              these labors, except that some
+            </p>
+          </div>
+          <!-- 3 -->
+          <div
+            class="flex flex-col gap-5 text-navColor bg-bgTrans ml-7 items-center justify-start w-64 p-10 h-[21rem] rounded-md shadow-md"
+          >
+            <i class="fa-regular fa-gem text-5xl text-accentColor"></i>
+            <h3 class="font-Poppins text-[20px] font-semibold text-center">
+              In any case, the work is done in a pan
+            </h3>
+            <p class="font-roboto text-[15px] text-center">
+              Unless they are blinded by lust, they do not come forth; they are
+              in fault who abandon their duties
+            </p>
+          </div>
+          <!-- 4 -->
+          <div
+            class="flex flex-col gap-5 text-navColor bg-bgTrans items-center justify-start w-64 p-10 h-[21rem] rounded-md shadow-md"
+          >
+            <i class="fa-solid fa-inbox text-5xl text-accentColor"></i>
+            <h3 class="font-Poppins text-[20px] font-semibold text-center">
+              Labor will result in pain
+            </h3>
+            <p class="font-roboto text-[15px] text-center">
+              Either he takes it with no one, or everyone. All the pains that
+              the elders do
+            </p>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <main>
+      <!-- aboutus -->
+      <a name="about" class="scroll-smooth"></a>
+      <section class="max-w-full bg-bgColor">
+        <div
+          class="max-w-inner mx-auto grid grid-cols-2 gap-10 mt-16 mb-12 place-items-start"
+        >
+          <!-- left -->
+          <div class="relative">
+            <img src="./assets/img/about.jpg" alt="" />
+            <div
+              class="absolute rounded-full bg-accentColor w-16 h-16 opacity-75 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
+            ></div>
+            <a
+              href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+              class="glightbox pulsating-play-btn absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-accentColor w-16 h-16 rounded-full p-6 z-40"
+            ></a>
+            <i
+              class="fa-solid fa-play absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-bgColor text-xl z-40"
+            ></i>
+          </div>
+          <!-- right -->
+          <div class="flex flex-col items-start">
+            <h3
+              class="text-[32px] font-Poppins font-semibold text-navColor justify-center"
+            >
+              About Us
+            </h3>
+            <p class="font-roboto text-[16px] text-justify text-defaultColor">
+              The pain of the right expedient is that the flight is rougher than
+              those who are of the least consequence. Some kind of pleasure is
+              softened. Let it be because of the troubles, because those who
+              suffer the great pains of the truth. It pleases the whole of the
+              corrupt to reject the truth as its fall.
+            </p>
+            <!-- list -->
+            <ul class="flex flex-col items-start ml-16 mt-5 gap-5">
+              <li class="relative">
+                <i
+                  class="fa-solid fa-vial-circle-check text-accentColor text-[45px] absolute -left-16 top-1/2 -translate-y-1/2"
+                ></i>
+                <h5
+                  class="font-Poppins text-[18px] font-semibold text-navColor"
+                >
+                  Any work except as a result
+                </h5>
+                <p class="font-roboto text-[15px] text-defaultColor">
+                  It is very easy to be repulsed when he is about to receive the
+                  book of the present
+                </p>
+              </li>
+              <li class="relative">
+                <i
+                  class="fa-solid fa-pump-medical text-accentColor text-[45px] absolute -left-16 top-1/2 -translate-y-1/2"
+                ></i>
+                <h5
+                  class="font-Poppins text-[18px] font-semibold text-navColor"
+                >
+                  Any work except as a result
+                </h5>
+                <p class="font-roboto text-[15px] text-defaultColor">
+                  It is very easy to be repulsed when he is about to receive the
+                  book of the present
+                </p>
+              </li>
+              <li class="relative">
+                <i
+                  class="fa-solid fa-heart-circle-xmark text-accentColor text-[45px] absolute -left-16 top-1/2 -translate-y-1/2"
+                ></i>
+                <h5
+                  class="font-Poppins text-[18px] font-semibold text-navColor"
+                >
+                  Any work except as a result
+                </h5>
+                <p class="font-roboto text-[15px] text-defaultColor">
+                  It is very easy to be repulsed when he is about to receive the
+                  book of the present
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- inner end -->
+        </div>
+      </section>
+      <!-- boxes -->
+      <section class="max-w-full bg-surfaceColor py-12">
+        <div class="max-w-inner mx-auto grid grid-cols-4 gap-5">
+          <div
+            class="flex flex-col items-center justify-center gap-3 bg-bgColor rounded-sm shadow-md pb-5"
+          >
+            <div class="relative w-10 h-10 rounded-full bg-accentColor -mt-5">
+              <i
+                class="fa-solid fa-user-doctor text-bgColor absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              ></i>
+            </div>
+            <h3 class="font-Poppins text-[32px] text-navColor font-semibold">
+              85
+            </h3>
+            <h5 class="font-Poppins text-[16px] text-defaultColor">Doctors</h5>
+          </div>
+          <!--  -->
+          <div
+            class="flex flex-col items-center justify-center gap-3 bg-bgColor rounded-sm shadow-md pb-5"
+          >
+            <div class="relative w-10 h-10 rounded-full bg-accentColor -mt-5">
+              <i
+                class="fa-regular fa-hospital text-bgColor absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              ></i>
+            </div>
+            <h3 class="font-Poppins text-[32px] text-navColor font-semibold">
+              18
+            </h3>
+            <h5 class="font-Poppins text-[16px] text-defaultColor">
+              Departments
+            </h5>
+          </div>
+          <!--  -->
+          <div
+            class="flex flex-col items-center justify-center gap-3 bg-bgColor rounded-sm shadow-md pb-5"
+          >
+            <div class="relative w-10 h-10 rounded-full bg-accentColor -mt-5">
+              <i
+                class="fa-solid fa-flask text-bgColor absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              ></i>
+            </div>
+            <h3 class="font-Poppins text-[32px] text-navColor font-semibold">
+              12
+            </h3>
+            <h5 class="font-Poppins text-[16px] text-defaultColor">
+              Research Labs
+            </h5>
+          </div>
+          <!--  -->
+          <div
+            class="flex flex-col items-center justify-center gap-3 bg-bgColor rounded-sm shadow-md pb-5"
+          >
+            <div class="relative w-10 h-10 rounded-full bg-accentColor -mt-5">
+              <i
+                class="fa-solid fa-award text-bgColor absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              ></i>
+            </div>
+            <h3 class="font-Poppins text-[32px] text-navColor font-semibold">
+              150
+            </h3>
+            <h5 class="font-Poppins text-[16px] text-defaultColor">Awards</h5>
+          </div>
+        </div>
+      </section>
+      <!-- departments -->
+      <a name="department"></a>
+      <section class="max-w-full bg-bgColor py-12 overflow-hidden">
+        <div class="max-w-inner mx-auto flex flex-col gap-10">
+          <!-- top -->
+          <div class="flex flex-col gap-8 justify-center items-center">
+            <h3
+              class="font-Poppins text-[32px] font-semibold text-navColor relative before:absolute before:content-[''] before:w-36 before:h-0.5 before:bg-titleBorder before:-bottom-2 before:left-1/2 before:-translate-x-1/2 after:absolute after:content-[''] after:w-20 after:h-0.5 after:-bottom-2 after:-translate-x-1/2 after:left-1/2 after:bg-accentColor"
+            >
+              Departments
+            </h3>
+            <h6 class="font-robotot text-[16px] text-defaultColor">
+              His needs result from something he wants to escape from
+            </h6>
+          </div>
+          <!-- bottom -->
+          <div class="flex items-start w-full gap-5 overflow-hidden">
+            <!-- left -->
+            <div class="flex flex-col w-[20%] border-r-titleBorder border-r-2">
+              <ul
+                class="flex flex-col gap-6 font-roboto text-[15px] text-defaultColor font-semibold cursor-pointer"
+              >
+                <li class="department" data-field="0">Cardiology</li>
+                <li class="department" data-field="1">Neurology</li>
+                <li class="department" data-field="2">Hepatology</li>
+                <li class="department" data-field="3">Pediatrics</li>
+                <li class="department" data-field="4">Eye Care</li>
+              </ul>
+            </div>
+            <!-- right -->
+            <div
+              class="hidden depBox gap-5 items-start w-[80%] cursor-pointer"
+              id="0"
+            >
+              <!-- text -->
+              <div class="flex flex-col gap-3">
+                <h3
+                  class="font-Poppins text-[26px] text-navColor font-semibold"
+                >
+                  It will happen that the very cinder pad rone matrelat sanding
+                  reda
+                </h3>
+                <h6 class="font-roboto text-sm italic text-defaultColor">
+                  But I often flatter those who are in debt, because
+                </h6>
+                <p
+                  class="font-roboto text-defaultColor text-[16px] text-justify"
+                >
+                  All of our training. To reject rejection less. All the
+                  refusals to do not how to do what his who. Because he really
+                  hates him and who loves some people. But it is either that
+                  they are blinded by the pleasures of life or by the troubles
+                  of life
+                </p>
+              </div>
+              <!-- img -->
+              <div class="w-full">
+                <img
+                  src="./assets/img/departments-1.jpg"
+                  alt=""
+                  class="w-[100%]"
+                />
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="hidden depBox gap-5 items-start w-[80%]" id="1">
+              <!-- text -->
+              <div class="flex flex-col gap-3">
+                <h3
+                  class="font-Poppins text-[26px] text-navColor font-semibold"
+                >
+                  And no one will accept the truth by flattery
+                </h3>
+                <h6 class="font-roboto text-sm italic text-defaultColor">
+                  He who has the praiseworthy results of his labors should be
+                  the one who to the wise dila parde rangar raqer a videna
+                  mareta paulona marka
+                </h6>
+                <p
+                  class="font-roboto text-defaultColor text-[16px] text-justify"
+                >
+                  She will achieve the very pleasure of who she is. This error
+                  is all because they are to be rejected. We therefore accuse
+                  him of not wanting something to be repelled, and he wants the
+                  pleasures themselves. They don't know the option and we accuse
+                  them of being blessed
+                </p>
+              </div>
+              <!-- img -->
+              <div class="w-full">
+                <img
+                  src="./assets/img/departments-2.jpg"
+                  alt=""
+                  class="w-[100%]"
+                />
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="hidden depBox gap-5 items-start w-[80%]" id="2">
+              <!-- text -->
+              <div class="flex flex-col gap-3">
+                <h3
+                  class="font-Poppins text-[26px] text-navColor font-semibold"
+                >
+                  It is easy to be blinded by hatred and not be opened
+                </h3>
+                <h6 class="font-roboto text-sm italic text-defaultColor">
+                  What pleasures they I hate people like him, for that is not
+                  flight. Those who are not born are called pain and. In the
+                  rougher he wants to seek to endure or
+                </h6>
+                <p
+                  class="font-roboto text-defaultColor text-[16px] text-justify"
+                >
+                  He hates the rights of things. It is the fault of the corrupt
+                  truth that anyone follows him. Nor did the necessities of
+                  things make him so. I am pleased with the very least
+                  inconvenience, but laborious from this hatred. He hates them,
+                  they don't know how to run away. And the choice of these
+                  pleasures
+                </p>
+              </div>
+              <!-- img -->
+              <div class="w-full">
+                <img
+                  src="./assets/img/departments-3.jpg"
+                  alt=""
+                  class="w-[100%]"
+                />
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="hidden depBox gap-5 items-start w-[80%]" id="3">
+              <!-- text -->
+              <div class="flex flex-col gap-3">
+                <h3
+                  class="font-Poppins text-[26px] text-navColor font-semibold"
+                >
+                  To escape the pains of the laborious finder is to accuse the
+                  laborious of pain
+                </h3>
+                <h6 class="font-roboto text-sm italic text-defaultColor">
+                  We charge the whole opening. He repulses the result of right
+                  pleasure, and rightly chooses who is chosen
+                </h6>
+                <p
+                  class="font-roboto text-defaultColor text-[16px] text-justify"
+                >
+                  And these results are the results of the free expedient in the
+                  pleasure. Whosoever wants to escape from our own needs and
+                  debts. It is the result of the most error in the body and. To
+                  choose the harsher, but those who will open the truth because
+                  of the inventor of hardships
+                </p>
+              </div>
+              <!-- img -->
+              <div class="w-full">
+                <img
+                  src="./assets/img/departments-4.jpg"
+                  alt=""
+                  class="w-[100%]"
+                />
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="hidden depBox gap-5 items-start w-[80%]" id="4">
+              <!-- text -->
+              <div class="flex flex-col gap-3">
+                <h3
+                  class="font-Poppins text-[26px] text-navColor font-semibold"
+                >
+                  It will happen that the very cinder pad rone matrelat sanding
+                  reda
+                </h3>
+                <h6 class="font-roboto text-sm italic text-defaultColor">
+                  But I often flatter those who are in debt, because
+                </h6>
+                <p
+                  class="font-roboto text-defaultColor text-[16px] text-justify"
+                >
+                  All of our training. To reject rejection less. All the
+                  refusals to do not how to do what his who. Because he really
+                  hates him and who loves some people. But it is either that
+                  they are blinded by the pleasures of life or by the troubles
+                  of life
+                </p>
+              </div>
+              <!-- img -->
+              <div class="w-full">
+                <img
+                  src="./assets/img/departments-5.jpg"
+                  alt=""
+                  class="w-[100%]"
+                />
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <!-- Doctors -->
+      <a name="doctor" class=""></a>
+      <section class="max-w-full bg-bgColor py-12">
+        <div class="max-w-inner mx-auto flex flex-col gap-10">
+          <!-- top -->
+          <div class="flex flex-col gap-8 justify-center items-center">
+            <h3
+              class="font-Poppins text-[32px] font-semibold text-navColor relative before:absolute before:content-[''] before:w-36 before:h-0.5 before:bg-titleBorder before:-bottom-2 before:left-1/2 before:-translate-x-1/2 after:absolute after:content-[''] after:w-20 after:h-0.5 after:-bottom-2 after:-translate-x-1/2 after:left-1/2 after:bg-accentColor"
+            >
+              Doctors
+            </h3>
+            <h6 class="font-robotot text-[16px] text-defaultColor">
+              His needs result from something he wants to escape from
+            </h6>
+          </div>
+          <!-- bottom box -->
+          <div class="grid grid-cols-2 place-items-center gap-5">
+            <!-- box -->
+            <div
+              class="flex items-center justify-center gap-6 shadow-md rounded-md p-5"
+            >
+              <div class="w-60">
+                <img
+                  src="./assets/img/doctors-1.jpg"
+                  alt=""
+                  class="rounded-full w-full"
+                />
+              </div>
+              <div class="flex flex-col items-start gap-3">
+                <div>
+                  <h4 class="font-Poppins text-[20px] text-navColor font-bold">
+                    Walter White
+                  </h4>
+                  <h6
+                    class="font-roboto text-[15px] text-defaultColor font-semibold"
+                  >
+                    Chief Medical Officer
+                  </h6>
+                </div>
+                <span
+                  class="relative before:content-[''] before:absolute before:w-16 before:h-0.5 before:bg-titleBorder"
+                ></span>
+                <div class="flex flex-col gap-3">
+                  <h6 class="font-roboto text-sm text-defaultColor text-start">
+                    I will explain the pleasure of flexibility and repulses
+                    those of pain as if
+                  </h6>
+                  <ul class="flex gap-3">
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-x-twitter text-center"></i>
+                    </li>
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-facebook"></i>
+                    </li>
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div
+              class="flex items-center justify-center gap-6 shadow-md rounded-md p-5"
+            >
+              <div class="w-60">
+                <img
+                  src="./assets/img/doctors-2.jpg"
+                  alt=""
+                  class="rounded-full w-full"
+                />
+              </div>
+              <div class="flex flex-col items-start gap-3">
+                <div>
+                  <h4 class="font-Poppins text-[20px] text-navColor font-bold">
+                    Sarah Johnson
+                  </h4>
+                  <h6
+                    class="font-roboto text-[15px] text-defaultColor font-semibold"
+                  >
+                    Anesthesiologist
+                  </h6>
+                </div>
+                <span
+                  class="relative before:content-[''] before:absolute before:w-16 before:h-0.5 before:bg-titleBorder"
+                ></span>
+                <div class="flex flex-col gap-3">
+                  <h6 class="font-roboto text-sm text-defaultColor text-start">
+                    Either he will love the greater pleasures, and who will
+                    prepare the present ones to be sent
+                  </h6>
+                  <ul class="flex gap-3">
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-x-twitter text-center"></i>
+                    </li>
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-facebook"></i>
+                    </li>
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div
+              class="flex items-center justify-center gap-6 shadow-md rounded-md p-5"
+            >
+              <div class="w-60">
+                <img
+                  src="./assets/img/doctors-3.jpg"
+                  alt=""
+                  class="rounded-full w-full"
+                />
+              </div>
+              <div class="flex flex-col items-start gap-3">
+                <div>
+                  <h4 class="font-Poppins text-[20px] text-navColor font-bold">
+                    William Anderson
+                  </h4>
+                  <h6
+                    class="font-roboto text-[15px] text-defaultColor font-semibold"
+                  >
+                    Cardiology
+                  </h6>
+                </div>
+                <span
+                  class="relative before:content-[''] before:absolute before:w-16 before:h-0.5 before:bg-titleBorder"
+                ></span>
+                <div class="flex flex-col gap-3">
+                  <h6 class="font-roboto text-sm text-defaultColor text-start">
+                    It is easy for anyone to escape from the things that are
+                    corrupt when they want to work
+                  </h6>
+                  <ul class="flex gap-3">
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-x-twitter text-center"></i>
+                    </li>
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-facebook"></i>
+                    </li>
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div
+              class="flex items-center justify-center gap-6 shadow-md rounded-md p-5"
+            >
+              <div class="w-60">
+                <img
+                  src="./assets/img/doctors-4.jpg"
+                  alt=""
+                  class="rounded-full w-full"
+                />
+              </div>
+              <div class="flex flex-col items-start gap-3">
+                <div>
+                  <h4 class="font-Poppins text-[20px] text-navColor font-bold">
+                    Amanda Jepson
+                  </h4>
+                  <h6
+                    class="font-roboto text-[15px] text-defaultColor font-semibold"
+                  >
+                    Neurosurgeon
+                  </h6>
+                </div>
+                <span
+                  class="relative before:content-[''] before:absolute before:w-16 before:h-0.5 before:bg-titleBorder"
+                ></span>
+                <div class="flex flex-col gap-3">
+                  <h6 class="font-roboto text-sm text-defaultColor text-start">
+                    He hates the times of pain, the duties of the duties, and we
+                    accuse him
+                  </h6>
+                  <ul class="flex gap-3">
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-x-twitter text-center"></i>
+                    </li>
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-facebook"></i>
+                    </li>
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- faq -->
+      <section class="max-w-full bg-surfaceColor py-12">
+        <div
+          class="max-w-inner mx-auto flex flex-col gap-12 justify-center items-center"
+        >
+          <div class="flex flex-col gap-8 justify-center items-center">
+            <h3
+              class="font-Poppins text-[32px] font-semibold text-navColor relative before:absolute before:content-[''] before:w-36 before:h-0.5 before:bg-titleBorder before:-bottom-2 before:left-1/2 before:-translate-x-1/2 after:absolute after:content-[''] after:w-20 after:h-0.5 after:-bottom-2 after:-translate-x-1/2 after:left-1/2 after:bg-accentColor"
+            >
+              Frequently Asked Questions
+            </h3>
+            <h6 class="font-robotot text-[16px] text-defaultColor">
+              His needs result from something he wants to escape from
+            </h6>
+          </div>
+          <!-- drop down box -->
+          <div class="flex flex-col gap-3 justify-center items-center w-full">
+            <!-- 1 -->
+            <div
+              class="flex flex-col gap-2 bg-bgColor shadow-md p-5 w-full rounded-md cursor-pointer"
+            >
+              <div class="flex justify-between items-center faqTitle">
+                <h3
+                  class="font-Poppins text-[18px] text-navColor font-semibold"
+                >
+                  Will it not be followed by a was for but a bed urn two?
+                </h3>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <!-- hide box -->
+              <div class="hidden faqText">
+                <p class="text-sm font-roboto">
+                  The price of the product is very low. Time targeted urn id
+                  volutpat lacus laoreet will not be taken care of pregnant.
+                  Venenatis bed great fringilla urn porttitor rhoncus pain pure
+                  not.
+                </p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div
+              class="flex flex-col gap-2 bg-bgColor shadow-md p-5 w-full rounded-md cursor-pointer"
+            >
+              <div class="flex justify-between items-center faqTitle">
+                <h3
+                  class="font-Poppins text-[18px] text-navColor font-semibold"
+                >
+                  Does chocolate burn for the disease of the throat now?
+                </h3>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <!-- hide box -->
+              <div class="hidden faqText">
+                <p class="text-sm font-roboto">
+                  The pain should be followed by the education of the people
+                  living with the disease. Sometimes it's just a matter of time.
+                  Fragilla phasellus faucibus chocolate eleifend until the
+                  price. It's a great asset for the kids. Mauris ultrices eros
+                  in the course of the university mass tincidunt dui.
+                </p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div
+              class="flex flex-col gap-2 bg-bgColor shadow-md p-5 w-full rounded-md cursor-pointer"
+            >
+              <div class="flex justify-between items-center faqTitle">
+                <h3
+                  class="font-Poppins text-[18px] text-navColor font-semibold"
+                >
+                  Is it painful to pursue a coaching program for kids?
+                </h3>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <!-- hide box -->
+              <div class="hidden faqText">
+                <p class="text-sm font-roboto">
+                  Eleifend mi in no way put any concern for the basketball
+                  arrows of the clinic. For the whole element of the pillow. If
+                  there is no quiver in the diam, the players will receive it.
+                  Rutrum terlus pellentesque eu tincidunt. Bed urn two valley
+                  valley valley. Urna employee at the element of easy football
+                  but hate the disease who
+                </p>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div
+              class="flex flex-col gap-2 bg-bgColor shadow-md p-5 w-full rounded-md cursor-pointer"
+            >
+              <div class="flex justify-between items-center faqTitle">
+                <h3
+                  class="font-Poppins text-[18px] text-navColor font-semibold"
+                >
+                  And I hate the time of clinical trials. Are some of my
+                  teenagers in the middle of nowhere?
+                </h3>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <!-- hide box -->
+              <div class="hidden faqText">
+                <p class="text-sm font-roboto">
+                  The pain should be followed by the education of the people
+                  living with the disease. Sometimes it's just a matter of time.
+                  Fragilla phasellus faucibus chocolate eleifend until the
+                  price. It's a great asset for the kids. Mauris ultrices eros
+                  in the course of the university mass tincidunt dui.
+                </p>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div
+              class="flex flex-col gap-2 bg-bgColor shadow-md p-5 w-full rounded-md cursor-pointer"
+            >
+              <div class="flex justify-between items-center faqTitle">
+                <h3
+                  class="font-Poppins text-[18px] text-navColor font-semibold"
+                >
+                  Do you see that where there are none, where there is no one?
+                </h3>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <!-- hide box -->
+              <div class="hidden faqText">
+                <p class="text-sm font-roboto">
+                  For it is easy to seek pleasure and pain. Who does not succeed
+                  but undertakes to follow. The distinction between pain and
+                </p>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div
+              class="flex flex-col gap-2 bg-bgColor shadow-md p-5 w-full rounded-md cursor-pointer"
+            >
+              <div class="flex justify-between items-center faqTitle">
+                <h3
+                  class="font-Poppins text-[18px] text-navColor font-semibold"
+                >
+                  Time for the kids to have some salad and a salad?
+                </h3>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <!-- hide box -->
+              <div class="hidden faqText">
+                <p class="text-sm font-roboto">
+                  It was a nuisance from the targets but it was an advantage for
+                  the students. It is worth hanging on before. Now, even a smile
+                  is a good way to draw a layer of curtains. It should be a lot
+                  of fans to drink. Pure pregnant who flatters the ugly course
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- gallery -->
+      <section class="max-w-full bg-bgColor py-12">
+        <div class="max-w-full mx-auto flex flex-col gap-8">
+          <!-- top -->
+          <div class="flex flex-col gap-8 justify-center items-center">
+            <h3
+              class="font-Poppins text-[32px] font-semibold text-navColor relative before:absolute before:content-[''] before:w-36 before:h-0.5 before:bg-titleBorder before:-bottom-2 before:left-1/2 before:-translate-x-1/2 after:absolute after:content-[''] after:w-20 after:h-0.5 after:-bottom-2 after:-translate-x-1/2 after:left-1/2 after:bg-accentColor"
+            >
+              Gallery
+            </h3>
+            <h6 class="font-robotot text-[16px] text-defaultColor">
+              His needs result from something he wants to escape from
+            </h6>
+          </div>
+          <!-- bottom gallery -->
+          <div
+            class="w-full grid grid-cols-4 place-items-center gap-1 px-2 cursor-pointer"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="./assets/img/gallery-1.jpg"
+                alt=""
+                class="w-full hover:scale-125 transition-all ease-in-out duration-300 delay-75"
+              />
+            </div>
+
+            <div class="overflow-hidden">
+              <img
+                src="./assets/img/gallery-2.jpg"
+                alt=""
+                class="w-full hover:scale-125 transition-all ease-in-out duration-300 delay-75"
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                src="./assets/img/gallery-3.jpg"
+                alt=""
+                class="w-full hover:scale-125 transition-all ease-in-out duration-300 delay-75"
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                src="./assets/img/gallery-4.jpg"
+                alt=""
+                class="w-full hover:scale-125 transition-all ease-in-out duration-300 delay-75"
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                src="./assets/img/gallery-5.jpg"
+                alt=""
+                class="w-full hover:scale-125 transition-all ease-in-out duration-300 delay-75"
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                src="./assets/img/gallery-6.jpg"
+                alt=""
+                class="w-full hover:scale-125 transition-all ease-in-out duration-300 delay-75"
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                src="./assets/img/gallery-7.jpg"
+                alt=""
+                class="w-full hover:scale-125 transition-all ease-in-out duration-300 delay-75"
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                src="./assets/img/gallery-8.jpg"
+                alt=""
+                class="w-full hover:scale-125 transition-all ease-in-out duration-300 delay-75"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact -->
+      <a name="contact"></a>
+      <section class="max-w-full pb-12">
+        <div class="w-full flex flex-col justify-center items-center gap-12">
+          <div class="flex flex-col gap-8 justify-center items-center">
+            <h3
+              class="font-Poppins text-[32px] font-semibold text-navColor relative before:absolute before:content-[''] before:w-36 before:h-0.5 before:bg-titleBorder before:-bottom-2 before:left-1/2 before:-translate-x-1/2 after:absolute after:content-[''] after:w-20 after:h-0.5 after:-bottom-2 after:-translate-x-1/2 after:left-1/2 after:bg-accentColor"
+            >
+              Contact
+            </h3>
+            <h6 class="font-robotot text-[16px] text-defaultColor">
+              His needs result from something he wants to escape from
+            </h6>
+          </div>
+          <!-- map -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14106.085289416542!2d96.1583326!3d16.7774913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ec86c64627b3%3A0xf629281949864a5c!2sSule%20Square!5e1!3m2!1sen!2smm!4v1730270919098!5m2!1sen!2smm"
+            width=""
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-full"
+          ></iframe>
+        </div>
+        <div class="max-w-inner mx-auto flex mt-12">
+          <div class="flex flex-col gap-5 w-3/4">
+            <div class="flex items-center gap-2">
+              <div class="rounded-full w-12 h-12 bg-accentColor text-center">
+                <i
+                  class="fa-solid fa-location-dot text-bgColor text-xl mt-4"
+                ></i>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h4
+                  class="text-[16px] font-Poppins text-navColor font-semibold"
+                >
+                  Location
+                </h4>
+                <p class="text-sm font-roboto text-defaultColor">
+                  A108 Adam Street, New York, NY 535022
+                </p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="flex items-center gap-2">
+              <div class="rounded-full w-12 h-12 bg-accentColor text-center">
+                <i
+                  class="fa-solid fa-phone-volume text-bgColor text-xl mt-4"
+                ></i>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h4
+                  class="text-[16px] font-Poppins text-navColor font-semibold"
+                >
+                  Call Us
+                </h4>
+                <p class="text-sm font-roboto text-defaultColor">
+                  +1 5589 55488 55
+                </p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="flex items-center gap-2">
+              <div class="rounded-full w-12 h-12 bg-accentColor text-center">
+                <i
+                  class="fa-regular fa-envelope text-bgColor text-xl mt-3.5"
+                ></i>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h4
+                  class="text-[16px] font-Poppins text-navColor font-semibold"
+                >
+                  Email Us
+                </h4>
+                <p class="text-sm font-roboto text-defaultColor">
+                  info@example.com
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5 w-full">
+            <form
+              action="#"
+              class="flex flex-col gap-3 w-full justify-start items-start"
+            >
+              <div class="flex gap-3 w-full">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  class="border border-titleBorder outline-none inset-0 rounded-sm p-2 w-full"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  class="border border-titleBorder outline-none inset-0 rounded-sm p-2 w-full"
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Subject"
+                class="border border-titleBorder outline-none inset-0 rounded-sm p-2 w-full"
+              />
+              <textarea
+                name="textarea"
+                id=""
+                placeholder="Message"
+                class="border border-titleBorder outline-none inset-0 rounded-sm p-2 w-full h-28"
+              ></textarea>
+            </form>
+            <button
+              type="submit"
+              class="text-sm text-bgColor w-28 p-2 rounded-2xl bg-accentColor flex mx-auto"
+            >
+              Send Message
+            </button>
+          </div>
+        </div>
+      </section>
+      <footer class="max-w-full bg-surfaceColor pt-12">
+        <div
+          class="max-w-inner mx-auto grid grid-cols-5 gap-5 border-b border-b-titleBorder pb-8 place-items-center"
+        >
+          <!-- 1 -->
+          <div class="flex flex-col items-start gap-3">
+            <h3 class="font-semibold font-Poppins text-[16px] text-navColor">
+              Medilab
+            </h3>
+            <ul class="font-roboto text-sm text-defaultColor">
+              <li>A108 Adam Street</li>
+              <li>New York, NY 535022</li>
+              <li>
+                <span class="font-semibold ml-1">Phone:</span>+1 5589 55488 55
+              </li>
+              <li>
+                <span class="font-semibold ml-1">Phone:</span>+1 5589 55488 55
+              </li>
+            </ul>
+            <ul class="flex gap-3 text-defaultColor">
+              <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                <i class="fa-brands fa-x-twitter text-center"></i>
+              </li>
+              <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                <i class="fa-brands fa-facebook"></i>
+              </li>
+              <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+              <li class="w-8 h-8 rounded-full bg-titleBorder text-center">
+                <i class="fa-brands fa-linkedin"></i>
+              </li>
+            </ul>
+          </div>
+          <!-- 2 -->
+          <div class="flex flex-col items-start gap-3">
+            <h3 class="font-semibold font-Poppins text-[16px] text-navColor">
+              Useful Links
+            </h3>
+            <ul class="font-roboto text-sm text-defaultColor">
+              <li>Home</li>
+              <li>About us</li>
+              <li>Services</li>
+              <li>Terms of service</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <!-- 3 -->
+          <div class="flex flex-col items-start gap-3">
+            <h3 class="font-semibold font-Poppins text-[16px] text-navColor">
+              Our Services
+            </h3>
+            <ul class="font-roboto text-sm text-defaultColor">
+              <li>Web Design</li>
+              <li>Web Development</li>
+              <li>Product Management</li>
+              <li>Marketing</li>
+              <li>Graphic Design</li>
+            </ul>
+          </div>
+          <!-- 4 -->
+          <div class="flex flex-col items-start gap-3">
+            <h3 class="font-semibold font-Poppins text-[16px] text-navColor">
+              Hic Soultasetp
+            </h3>
+            <ul class="font-roboto text-sm text-defaultColor">
+              <li>Excepturi dignissimos</li>
+              <li>Suscipit distinctio</li>
+              <li>Dilecta</li>
+              <li>Sit quas consectetur</li>
+            </ul>
+          </div>
+          <!-- 5 -->
+          <div class="flex flex-col items-start gap-3">
+            <h3 class="font-semibold font-Poppins text-[16px] text-navColor">
+              Nobis illum
+            </h3>
+            <ul class="font-roboto text-sm text-defaultColor">
+              <li>Ipsam</li>
+              <li>Laudantium dolorum</li>
+              <li>Dinera</li>
+              <li>Trodelas</li>
+              <li>Flexo</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-3 justify-center items-center font-roboto pt-3"
+        >
+          <h6 class="text-[14px] text-defaultColor">
+            @copyright <span class="font-semibold">Medilab</span> all Reserved
+          </h6>
+          <h6 class="text-sm">
+            Designed by <span class="text-accentColor text-sm">Tailwind</span>
+          </h6>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
